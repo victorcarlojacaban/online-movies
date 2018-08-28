@@ -14,10 +14,10 @@
 				</div>
 					<div class="wo_movie-items">
 						<div class="wo_tittle-list" id="load-data">
-							@foreach ($movies as $movie)
+							@foreach ($tvshows as $tv)
 								<?php 
 									
-									$posterImage = !empty($movie['poster_path']) ? "https://image.tmdb.org/t/p/w154".$movie['poster_path'] : '/no-poster.jpg';
+									$posterImage = !empty($tv['poster_path']) ? "https://image.tmdb.org/t/p/w154".$tv['poster_path'] : '/no-poster.jpg';
 								?>
 
 								<div class="wo_movie-item__link">
@@ -25,19 +25,19 @@
 										<div class="wo_movie-item__poster" style="background-image: url(&quot; {{ $posterImage }} &quot;);">
 							
 										</div>
-										<div class="wo_movie-item__details"><a href="#" data-event-name="See details click" data-event-label="Fifty Shades Darker" data-event-category="List Page" class="wo_movie-item__wrap track_event"><div class="wo_movie-item__title">{{ $movie['title'] }}</div><div class="wo_movie-item__info"><span class="wo_movie-item__info__year">{{ date("Y",strtotime($movie['release_date'])) }} </span><div class="wo_movie-item__info__rating"><div class="rating">
+										<div class="wo_movie-item__details"><a href="#" data-event-name="See details click" data-event-label="Fifty Shades Darker" data-event-category="List Page" class="wo_movie-item__wrap track_event"><div class="wo_movie-item__title">{{ $tv['name'] }}</div><div class="wo_movie-item__info"><span class="wo_movie-item__info__year">{{ date("Y",strtotime($tv['first_air_date'])) }} </span><div class="wo_movie-item__info__rating"><div class="rating">
 										<span style="color:#fdc228">☆</span>
-									</div>&nbsp;{{ $movie['vote_average'] }}</div></div><p class="wo_movie-item__description">
-											{{ $movie['overview'] }}
+									</div>&nbsp;{{ $tv['vote_average'] }}</div></div><p class="wo_movie-item__description">
+											{{ $tv['overview'] }}
 										</p></a></div>
 									</div>
-								<div class="wo_movie-item__title">{{ $movie['title'] }}</div>
-								<div class="wo_movie-item__info"><span class="wo_movie-item__info__year">{{ date("Y",strtotime($movie['release_date'])) }}</span><div class="wo_movie-item__info__rating">
+								<div class="wo_movie-item__title">{{ $tv['name'] }}</div>
+								<div class="wo_movie-item__info"><span class="wo_movie-item__info__year">{{ date("Y",strtotime($tv['first_air_date'])) }}</span><div class="wo_movie-item__info__rating">
 									<div class="rating">
 										<span style="color:#fdc228">☆</span>
 									</div>&nbsp;
 
-									{{ $movie['vote_average'] }}
+									{{ $tv['vote_average'] }}
 								</div></div>
 
 								</div>
@@ -45,7 +45,7 @@
 							@endforeach
 							<center>
 								<div id="remove-row" style="color:black">
-		                            <button id="btn-more" data-id="1" data-genre="{{ $genreData }}" data-type="{{ $movieType }}" class="button">Load More Movies</button>
+		                            <button id="btn-more" data-id="1" class="button"> Load More TV Shows</button>
 		                        </div>
 	                    	</center>
 	                    	<br/>
@@ -82,16 +82,15 @@
 			$(document).ready(function() {
 
 			   $(document).on('click','#btn-more',function(){
-			      	let id = $(this).data('id');
-			    	let genre = $(this).data('genre');
-			    	let type = $(this).data('type');
- 
-			       	$("#btn-more").html("Loading....");
+			       let id = $(this).data('id');
+			       let genre = $(this).data('genre');
 
-			       	$.ajax({
-			           url : '{{ url("loaddata") }}',
+			       $("#btn-more").html("Loading....");
+
+			       $.ajax({
+			           url : '{{ url("loaddatatv") }}',
 			           method : "POST",
-			           data : { id: id, genre:genre, type:type , _token:" {{csrf_token()}} "},
+			           data : { id: id, genre:genre , _token:" {{csrf_token()}} "},
 			           dataType : "text",
 			           success : function (data) {
 			              if (data != '') {

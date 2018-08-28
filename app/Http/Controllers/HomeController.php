@@ -20,6 +20,7 @@ class HomeController extends Controller
     {
         $genreData = $request->genre;
         $movieType = $request->type;
+        $movieTv   = $request->tvshow;
 
         if ($genreData) {
             $movies = Tmdb::getGenresApi()->getMovies($genreData, ['page' => 1])['results'];
@@ -39,13 +40,15 @@ class HomeController extends Controller
                      break;
             }
 
-        } else{
+        } elseif($movieTv) {
+            $movies = Tmdb::getTvApi()->getPopular(['page' => 1])['results'];
+        } else {
             $movies = Tmdb::getMoviesApi()->getPopular(['page' => 1])['results'];
         }
 
         $genres = Tmdb::getGenresApi()->getMovieGenres();
 
-        return view('home', compact('movies', 'genres', 'genreData'));
+        return view('home', compact('movies', 'genres', 'genreData', 'movieType'));
     }
 
     /**
@@ -83,7 +86,7 @@ class HomeController extends Controller
                      break;
             }
 
-        } else{
+        } else {
             $movies = Tmdb::getMoviesApi()->getPopular(['page' => $id])['results'];
         }
 
@@ -106,7 +109,7 @@ class HomeController extends Controller
                             <div class="wo_movie-item__poster" style="background-image: url(&quot;'. $posterImage .' &quot;);">
                             </div>
                             <div class="wo_movie-item__details">
-                                <a href="/movies/fifty-shades-darker" data-event-name="See details click" data-event-label="Fifty Shades Darker" data-event-category="List Page" class="wo_movie-item__wrap track_event"><div class="wo_movie-item__title">'. $movie['title'] .'</div><div class="wo_movie-item__info"><span class="wo_movie-item__info__year">'. date("Y",strtotime($movie['release_date'])) .' </span><div class="wo_movie-item__info__rating">
+                                <a href="#" data-event-name="See details click" data-event-label="Fifty Shades Darker" data-event-category="List Page" class="wo_movie-item__wrap track_event"><div class="wo_movie-item__title">'. $movie['title'] .'</div><div class="wo_movie-item__info"><span class="wo_movie-item__info__year">'. date("Y",strtotime($movie['release_date'])) .' </span><div class="wo_movie-item__info__rating">
                                     <div class="rating">
                                         <span style="color:#fdc228">☆</span>
                                     </div>&nbsp;
@@ -131,7 +134,7 @@ class HomeController extends Controller
             }
 
             $output .= '<center><div id="remove-row" style="color:black">
-                        <button id="btn-more" data-id="'. ($id + 1).'" data-genre="'. $genreData.'" class="btn btn-info"> Load More Movies </button>
+                        <button id="btn-more" data-id="'. ($id + 1).'" data-genre="'. $genreData.'" data-type="'. $movieType.'" class="button"> Load More Movies </button>
                     </div></center><br/>';
             
             echo $output;

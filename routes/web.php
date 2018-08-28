@@ -17,3 +17,6 @@ Route::get('/', function () {
 
 Route::get('/home', 'HomeController@index');
 Route::post('loaddata','HomeController@loadDataAjax' );
+
+Route::get('/tvshows', 'TvController@index');
+Route::post('loaddatatv','TvController@loadDataAjax' );

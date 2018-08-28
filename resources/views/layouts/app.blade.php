@@ -48,21 +48,28 @@
 <div class='wo_container wo_header-container'>
 <div class='wo_header__left'>
 <a class='wo_header__brand track_event' data-event-category='Menu' data-event-label='List Page' data-event-name='Homepage Click' href='/'>
-<div class='wo_header-logo' style="color:white;margin-top: -15px;"><h3>Freemovieswatching.com</h3></div>
+<div class="wo_header-logo logo-custom"><h3>Freemovieswatching.com</h3></div>
 </a>
 </div>
 <div class='wo_header__right'>
 <div class='wo_header__nav-container'>
 <ul class='wo_nav'>
-<li class='wo_nav__item rf_visible-xs-inline-block'>
-<button class='wo_js_search-toggle-btn wo_header__btn wo_header__btn--search-toggle wo_btn' type='button'>
-<i class='wo_header__btn-icon wo-icons wo-icons--search'></i>
-</button>
-</li>
 <li class='wo_nav__item wo_nav__item__menu rf_visible-sm-inline-block rf_visible-xs-inline-block'>
-<button class='wo_js_side-nav-toggle-btn wo_header__btn wo_header__btn--side-nav-toggle wo_btn' data-direction='left' data-target='#wo_side-nav-right' type='button'>
-<i class='wo_header__btn-icon wo-icons wo-icons--bars'></i>
-</button>
+	<a href="#menu" id="menuBtn" style="font-size: 40px">
+	  &#9776;
+	</a>
+
+	<div id="menuModal" class="modal">
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <span class="closeModal">&times;</span>
+	    <a href="/home" data-genre="action">Movies</a><br/>
+			<hr>
+		<a href="?tvshow=tv" data-genre="action">TV shows</a><br/>
+			<hr>
+	  </div>
+
+	</div>
 </li>
 </ul>
 <form class="wo_search-form " data-event-category="Search" data-event-label="List Page" data-default-label="List Page" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="user_id" id="user_id" value="86543387611784" />
@@ -130,7 +137,7 @@
 			</h3>
 			<ul class='wo_nav'>
 			<li class='wo_nav__item'>
-			<a class="wo_nav__link" href="/movies">Browse Movies</a>
+			<a class="wo_nav__link" href="/home">Browse Movies</a>
 			</li>
 			</ul>
 			</div>
@@ -212,5 +219,31 @@
 
 </div>
 </div>
+<script type="text/javascript">
+	var modal = document.getElementById('menuModal');
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("menuBtn");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("closeModal")[0];
+
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+	    modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	    modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	    if (event.target == modal) {
+	        modal.style.display = "none";
+	    }
+	}
+</script>
 </body>
 </html>
