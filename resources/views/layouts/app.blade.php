@@ -19,9 +19,14 @@
    <!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/jscroll/2.4.1/jquery.jscroll.min.js"></script> -->
  <!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.7.1/modernizr.min.js" type="text/javascript"></script>
+    <meta content='noindex' name='robots'>
+	<meta content='XThRvm7Pn7qVS5rn17wnOSJOIVf6ucYq-kmme8AxD-A' name='google-site-verification'>
+	<title>Watch Free Movies and Full TV Series Episodes Online from the Best providers</title>
+	<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+
     <link rel="icon"  type="image/png" href="{{ asset('favicon.ico') }}" />
-<link rel="stylesheet" media="all" href="/css/main.css" />
-<link rel="stylesheet" media="all" href="/css/styles.css" />
+	<link rel="stylesheet" media="all" href="/css/main.css" />
+	<link rel="stylesheet" media="all" href="/css/styles.css" />
 </head>
 <body class='   wo_nav-push wo_page wo_page-movies  wo_page-index wo_page--move wo_page--direct wo_locale--us' data-app-id='83' data-site='move'>
 <div class='wo_side-nav wo_side-nav--right' id='wo_side-nav-right'>
