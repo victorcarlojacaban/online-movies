@@ -10,7 +10,7 @@
 	  <div class="modal-content">
 	    <span class="close">&times;</span>
 	    @foreach($genres['genres'] as $genre)
-			<h2><a href="?genre={{ $genre['id'] }}" data-genre="action">{{ $genre['name'] }}</a></h2><br/>
+			<a href="?genre={{ $genre['id'] }}" data-genre="action"><h2>{{ $genre['name'] }}</h2></a><br/>
 			<hr>
 		@endforeach
 	  </div>

@@ -7053,7 +7053,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     width: 200px;
     position: absolute;
     display: block;
-    background-image: url(/assets/ab_paid_3/oval-2f4fdb43c707756f7cd024883c150f55a27aeba1a71844b7d4fcac3e71eae4fa.svg);
+    background-image: url(/img/ab-paid.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 100% 0;
@@ -7068,7 +7068,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     display: block;
     width: 100px;
     height: 40px;
-    background-image: url(/assets/ab_paid_3/amazon-video-logo-60cd1b7eb9784ec45fae76b9836a0ec32a325a3e7dee06d05fe1c22e5a63faf3.svg);
+    background-image: url(/img/amazon-video-logo.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%;
@@ -7098,7 +7098,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     height: 50px;
     display: block;
     font-family: "Encode Sans Regular",  sans-serif;
-    background-image: url(/assets/ab_paid_3/watch_now_another-db7602b024531be3e485e42fefbe4aa1efa7e8ee15dd7d9face80151f7abc0d2.svg);
+    background-image: url(/img/watch_now_another.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% 50%}
@@ -7998,7 +7998,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     position: relative;
 }
 .wo_content_wrapper:after {
-    content: '';
+   /* content: '';*/
     position: absolute;
     left: 50%;
     top: 50%;
@@ -8339,7 +8339,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
 }
 }@media (max-width: 768px) {
     .wo_header .wo_header-logo {
-    background-image: url(/assets/move/logos/move/logo_mob-ae5fdb6929687ac0ebfbc950513920922e119593b8003aa07b7ce72284bd6914.svg);
+ /*   background-image: url(/img/FreeMoviesWatching.png);*/
     height: 26px;
     width: 119px;
 }
@@ -10766,7 +10766,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     padding: 0;
 }
 .wo_listing-page-wrapper .wo_genre-filters .wo_genre-filter__link.selected {
-    /*background: url(/assets/move/movies_page/accept-542bbbacaee5e4e0425426715acb5bd97e81804eb04a9cb2dc3b460837fa527d.svg);*/
+    background: url(/assets/move/movies_page/accept-542bbbacaee5e4e0425426715acb5bd97e81804eb04a9cb2dc3b460837fa527d.svg);
     background-position: right center;
     background-repeat: no-repeat;
     color: #22b945;
@@ -10886,7 +10886,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
 .slider-amazon__container {
     height: 100%}
 .slider-amazon__btn {
-    background-image: url(/assets/move/movies_page/play-icon-4458f68573d8e2cd7ea0363a6ce9986769c8d822605526432c3bca2b881831f4.svg);
+    background-image: url(/img/play-icon.svg);
     width: 48px;
     height: 48px;
     left: 50%;
@@ -10914,7 +10914,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     background-size: cover;
 }
 .slider-amazon__label:after {
-    background-image: url(/assets/move/movies_page/oval_mob-4bb5613f113fc4682d55cdfa502e24c66acd41e3a6f1648bea52857e3e764061.svg);
+    background-image: url(/img/oval_mob.svg);
     width: 84px;
 }
 .slider-amazon__label:before {
@@ -11154,7 +11154,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     display: block !important;
 }
 .wo_page-movies.tablet .wo_header .wo_header-logo {
-    background-image: url(/assets/move/logos/move/logo_mob-ae5fdb6929687ac0ebfbc950513920922e119593b8003aa07b7ce72284bd6914.svg);
+  /*  background-image: url(/img/FreeMoviesWatching.png);*/
     height: 32px;
     width: 142px;
 }
@@ -11370,9 +11370,9 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     align-items: baseline;
 }
 .wo_page-movies .wo_header .wo_header-logo {
-    background-image: url(/assets/move/logos/move/logo_mob-ae5fdb6929687ac0ebfbc950513920922e119593b8003aa07b7ce72284bd6914.svg);
-    height: 32px;
-    width: 142px;
+   /* background-image: url(/img/FreeMoviesWatching.png);*/
+    height: 132px;
+    width: 152px;
 }
 .wo_page-movies .wo_header .wo-icons--search {
     color: #1ed760;

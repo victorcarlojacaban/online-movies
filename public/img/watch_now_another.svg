@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200px" height="40px" viewBox="0 0 200 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>btn/watch_now_another</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#8AC949" offset="0%"></stop>
+            <stop stop-color="#579E00" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="list-page-desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="slider-1" transform="translate(-265.000000, -150.000000)">
+            <g id="slider">
+                <g id="btn/watch_now_another" transform="translate(265.000000, 150.000000)">
+                    <g id="Group">
+                        <rect id="Rectangle-3" fill="url(#linearGradient-1)" x="0" y="0" width="200" height="40" rx="4"></rect>
+                        <g id="play-button" transform="translate(175.000000, 12.000000)" fill-rule="nonzero" fill="#FFFFFF">
+                            <path d="M0.810581333,15.9748462 C0.371429333,15.9748462 0.0153813333,15.6080385 0.0153813333,15.1556154 L0.0153813333,0.819192308 C0.0153813333,0.366769231 0.371429333,0 0.810581333,0 L13.7324693,7.37296154 C13.7324693,7.37296154 14.3288693,7.98738462 13.7324693,8.60184615 C13.1360693,9.21623077 0.810581333,15.9748462 0.810581333,15.9748462 Z" id="Shape"></path>
+                        </g>
+                        <rect id="Rectangle-4" fill-opacity="0.200000018" fill="#000000" x="163" y="7" width="1" height="26"></rect>
+                    </g>
+                    <text id="Start-your-free-tria" font-family="Roboto-Medium, Roboto" font-size="16" font-weight="400" fill="#FFFFFF">
+                        <tspan x="15" y="25">Start your free trial</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

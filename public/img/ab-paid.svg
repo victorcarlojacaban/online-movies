@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="240" viewBox="0 0 180 240">
+    <defs>
+        <linearGradient id="a" x1="50%" x2="50%" y1="22.503%" y2="75.945%">
+            <stop offset="0%" stop-color="#3E3E3E"/>
+            <stop offset="100%" stop-color="#050505"/>
+        </linearGradient>
+        <ellipse id="b" cx="870" cy="125" rx="170" ry="225"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-700)">
+        <use fill="url(#a)" xlink:href="#b"/>
+        <ellipse cx="870" cy="125" stroke="#81AB3F" stroke-width="4" rx="168" ry="223"/>
+    </g>
+</svg>
