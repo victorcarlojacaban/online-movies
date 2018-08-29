@@ -8306,10 +8306,10 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     width: 217px;
 }
 .wo_movie-item__title {
-	font-size: 32px!important;
+	font-size: 35px!important;
 }
 .wo_movie-item__info {
-	font-size: 32px!important;
+	font-size: 35px!important;
 }
 .wo_header .wo_search-form__container {
     width: 283px;
@@ -10695,6 +10695,10 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
 }
 .wo_listing-page-wrapper .wo_movie-item__poster {
     height: 480px;
+}
+.button {
+	padding: 30px 32px!important;
+	font-size: 40px;
 }
 .wo_listing-page-wrapper .wo_movie-item__details {
     display: none;
