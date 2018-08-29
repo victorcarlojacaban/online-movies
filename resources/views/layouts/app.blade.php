@@ -65,7 +65,7 @@
 	    <span class="closeModal"><h1>&times;</h1></span>
 	    <a href="/home" data-genre="action"><h1>Movies</h1></a><br/>
 			<hr>
-		<a href="?tvshow=tv" data-genre="action"><h1>TV shows</a></h1><br/>
+		<a href="/tvshows" data-genre="action"><h1>TV shows</a></h1><br/>
 			<hr>
 	  </div>
 
