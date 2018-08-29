@@ -55,14 +55,14 @@
 <div class='wo_header__nav-container'>
 <ul class='wo_nav'>
 <li class='wo_nav__item wo_nav__item__menu rf_visible-sm-inline-block rf_visible-xs-inline-block'>
-	<a href="#menu" id="menuBtn" style="font-size: 40px">
+	<a href="#menu" id="menuBtn" style="font-size: 65px;color:white">
 	  &#9776;
 	</a>
 
 	<div id="menuModal" class="modal">
 	  <!-- Modal content -->
 	  <div class="modal-content">
-	    <span class="closeModal">&times;</span>
+	    <span class="closeModal"><h1>&times;</h1></span>
 	    <a href="/home" data-genre="action"><h1>Movies</h1></a><br/>
 			<hr>
 		<a href="?tvshow=tv" data-genre="action"><h1>TV shows</a></h1><br/>
@@ -75,7 +75,7 @@
 <form class="wo_search-form " data-event-category="Search" data-event-label="List Page" data-default-label="List Page" action="/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="user_id" id="user_id" value="86543387611784" />
 <input type="hidden" name="page_load_id" id="page_load_id" value="228513.02261359" />
 
-<div class='wo_search-form__container'>
+<!-- <div class='wo_search-form__container'>
 	<div class='wo_input-group'>
 		<input type="text" name="q" class="wo_form-control wo_js_search-autocomplete" placeholder="What do you want to watch?" tabindex="-1" autocomplete="off" />
 		<div class='wo_input-group__btn'>
@@ -83,7 +83,7 @@
 			</button>
 		</div>
 </div>
-</div>
+</div> -->
 </form>
 <div class='wo_search-description'>UNLIMITED STREAMING WITH THOUSANDS OF MOVIES & TV SHOWS</div>
 <a class="clickout track_event_with_conversion navbar-banner__link" rel="nofollow noreferrer" target="_blank" data-locale="us" data-event-name="Amazon Try Free Month" data-link-type="amazon_prime" data-event-category="Header" data-event-label="List Page" href="/move/to/aHR0cHM6Ly93d3cuYW1hem9uLmNvbS9ncC92aWRlby9vZmZlcnM_dGFnPVRBR19SRVFVSVJFRC0yMQ==?extra_redirect_url_params_str=&amp;page_load_id=22851302261359&amp;product_type=&amp;rffrf=eJwlxzsKwzAMANATuUq6FAKhhyidjWorRCBbwVK%2Bp%2B%2BQt73ZfRkAtApXKrox%0A2WNHTzPcgYnFqYFoQqHw%2FYBR2ziRhdUiikQseGkFc2wenl3%2FetORaPFovmbW%0A8aci566a%2F5npKPE%3D%0A&amp;user_id=86543387611784"><div class='wo_header-trial-btn'>Try 30-Day Trial</div>

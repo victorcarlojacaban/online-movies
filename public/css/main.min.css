@@ -8311,7 +8311,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
 }@media (min-width: 768px) and (max-width: 1199px) {
     .wo_header {
     padding: 8px 30px;
-    height: 80x;
+    height: 90px;
 }
 .wo_header .wo_search-form__container {
     width: 250px;
