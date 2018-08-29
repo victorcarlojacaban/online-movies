@@ -8311,7 +8311,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
 }@media (min-width: 768px) and (max-width: 1199px) {
     .wo_header {
     padding: 8px 30px;
-    height: 64px;
+    height: 80x;
 }
 .wo_header .wo_search-form__container {
     width: 250px;
@@ -10633,7 +10633,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     display: block;
 }
 .wo_filters-toggles {
-    height: 32px;
+    height: 52px;
     border-radius: 3px;
     background-color: #1b1b1b;
     -ms-flex-direction: row;
@@ -10681,7 +10681,8 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     padding: 0;
 }
 .wo_listing-page-wrapper .wo_movie-item__link {
-    width: calc(100% * (1/4) - 27px);
+   /* width: calc(100% * (1/4) - 27px);*/
+   width: calc(100% * (1/2) - 30px);
 }
 .wo_listing-page-wrapper .wo_movie-item__link.wo_movie-banner {
     width: calc(100% * (2/4) - 27px);
