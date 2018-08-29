@@ -8305,6 +8305,12 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     height: 29px;
     width: 217px;
 }
+.wo_movie-item__title {
+	font-size: 24px!important;
+}
+.wo_movie-item__info {
+	font-size: 24px!important;
+}
 .wo_header .wo_search-form__container {
     width: 283px;
 }
