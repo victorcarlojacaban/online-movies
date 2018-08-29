@@ -10694,7 +10694,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     width: calc(100% * (2/4) - 27px);
 }
 .wo_listing-page-wrapper .wo_movie-item__poster {
-    height: 280px;
+    height: 480px;
 }
 .wo_listing-page-wrapper .wo_movie-item__details {
     display: none;
