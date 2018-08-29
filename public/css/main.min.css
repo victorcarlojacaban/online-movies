@@ -10633,7 +10633,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     display: block;
 }
 .wo_filters-toggles {
-    height: 52px;
+    height: 102px;
     border-radius: 3px;
     background-color: #1b1b1b;
     -ms-flex-direction: row;

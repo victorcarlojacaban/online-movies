@@ -48,7 +48,7 @@
 <div class='wo_container wo_header-container'>
 <div class='wo_header__left'>
 <a class='wo_header__brand track_event' data-event-category='Menu' data-event-label='List Page' data-event-name='Homepage Click' href='/'>
-<div class="wo_header-logo logo-custom"><h3>Freemovieswatching.com</h3></div>
+<div class="wo_header-logo logo-custom"><h2>Freemovieswatching.com</h2></div>
 </a>
 </div>
 <div class='wo_header__right'>
@@ -63,9 +63,9 @@
 	  <!-- Modal content -->
 	  <div class="modal-content">
 	    <span class="closeModal">&times;</span>
-	    <a href="/home" data-genre="action">Movies</a><br/>
+	    <a href="/home" data-genre="action"><h1>Movies</h1></a><br/>
 			<hr>
-		<a href="?tvshow=tv" data-genre="action">TV shows</a><br/>
+		<a href="?tvshow=tv" data-genre="action"><h1>TV shows</a></h1><br/>
 			<hr>
 	  </div>
 

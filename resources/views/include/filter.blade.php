@@ -1,6 +1,6 @@
 <div class="wo_filters-toggles wo_hide-desktop">
 		<a class="wo_filter--toggles__item wo_filter-toggle-genres" id="myBtn" href="#">
-		<span>Genres</span>
+		<span><h1>Genres</h1></span>
 		</a>
 	</div>
 
@@ -10,7 +10,7 @@
 	  <div class="modal-content">
 	    <span class="close">&times;</span>
 	    @foreach($genres['genres'] as $genre)
-			<a href="?genre={{ $genre['id'] }}" data-genre="action">{{ $genre['name'] }}</a><br/>
+			<h2><a href="?genre={{ $genre['id'] }}" data-genre="action">{{ $genre['name'] }}</a></h2><br/>
 			<hr>
 		@endforeach
 	  </div>
