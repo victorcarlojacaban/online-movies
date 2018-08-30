@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use Illuminate\Pagination\LengthAwarePaginator;
 
-class HomeController extends Controller
+class MovieController extends Controller
 {
     /**
      * Show popular movies
@@ -48,7 +48,7 @@ class HomeController extends Controller
 
         $genres = Tmdb::getGenresApi()->getMovieGenres();
 
-        return view('home', compact('movies', 'genres', 'genreData', 'movieType'));
+        return view('movies.index', compact('movies', 'genres', 'genreData', 'movieType'));
     }
 
     /**

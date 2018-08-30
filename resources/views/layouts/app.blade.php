@@ -61,11 +61,11 @@
 		<div class='wo_header__right'>
 			<div class='wo_header__nav-container'>
 				<ul class='wo_nav'>
-					<!-- <li class='wo_nav__item rf_visible-xs-inline-block'>
+					<li class='wo_nav__item rf_visible-xs-inline-block'>
 						<button class='wo_js_search-toggle-btn wo_header__btn wo_header__btn--search-toggle wo_btn' type='button'>
-							<i class='wo_header__btn-icon wo-icons wo-icons--search'></i>
+							<a href="/tvshows">TV SHOWS</a>
 						</button>
-					</li> -->
+					</li>
 					<!-- <li class='wo_nav__item wo_nav__item__menu rf_visible-sm-inline-block rf_visible-xs-inline-block'>
 						<a href="#menu" id="menuBtn" style="font-size: 65px;color:white">
 						  &#9776;
@@ -144,11 +144,14 @@
 	<div class='rf_col-sm-4'>
 	<div class='wo_footer__nav'>
 	<h3 class='wo_footer__nav-title'>
-	Movies
+	Movies & TV Shows
 	</h3>
 	<ul class='wo_nav'>
 	<li class='wo_nav__item'>
-	<a class="wo_nav__link" href="/home">Browse Movies</a>
+	<a class="wo_nav__link" href="/movies">Browse Movies</a>
+	</li>
+	<li class='wo_nav__item'>
+	<a class="wo_nav__link" href="/tvshows">Browse TV Shows</a>
 	</li>
 	</ul>
 	</div>

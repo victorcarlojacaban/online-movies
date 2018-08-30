@@ -27,7 +27,7 @@
 		<div class="genres-list-row">
 			<div data-reactroot="" class="wo_genre-filters__wrap ">
 
-			<span class="wo_genre-filter__link selected"><a href="/home" data-genre="all">ALL GENRES</a></span><span class="genres-separator"></span>
+			<span class="wo_genre-filter__link selected"><a href="/movies" data-genre="all">ALL GENRES</a></span><span class="genres-separator"></span>
 				@foreach($genres['genres'] as $genre)
 					<span class="wo_genre-filter__link "><a href="?genre={{ $genre['id'] }}" data-genre="action">{{ $genre['name'] }}</a></span><span class="genres-separator"></span>
 				@endforeach

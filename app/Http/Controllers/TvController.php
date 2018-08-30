@@ -22,7 +22,7 @@ class TvController extends Controller
 
         $genres = Tmdb::getGenresApi()->getMovieGenres();
 
-        return view('tvshow', compact('tvshows', 'genres'));
+        return view('tvshows.index', compact('tvshows', 'genres'));
     }
 
     /**

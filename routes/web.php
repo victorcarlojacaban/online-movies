@@ -12,11 +12,11 @@
 */
 
 Route::get('/', function () {
-    return redirect('home');
+    return redirect('movies');
 });
 
-Route::get('/home', 'HomeController@index');
-Route::post('loaddata','HomeController@loadDataAjax' );
+Route::get('/movies', 'MovieController@index');
+Route::post('loaddata','MovieController@loadDataAjax' );
 
 Route::get('/tvshows', 'TvController@index');
 Route::post('loaddatatv','TvController@loadDataAjax' );
