@@ -8127,8 +8127,9 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     -ms-justify-content: space-between;
     width: 100%}
 .wo_header .wo_header-logo {
+    background-image: url(/img/main-logo.png);
     width: 320px;
-    height: 25px;
+    height: 40px;
     background-repeat: no-repeat;
     background-size: 100%}
 .wo_header__brand {
@@ -8339,7 +8340,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
 }
 }@media (max-width: 768px) {
     .wo_header .wo_header-logo {
- /*   background-image: url(/img/FreeMoviesWatching.png);*/
+    background-image: url(/img/main-logo.png);
     height: 26px;
     width: 119px;
 }
@@ -11154,7 +11155,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     display: block !important;
 }
 .wo_page-movies.tablet .wo_header .wo_header-logo {
-  /*  background-image: url(/img/FreeMoviesWatching.png);*/
+    background-image: url(/img/main-logo.png);
     height: 32px;
     width: 142px;
 }
@@ -11370,7 +11371,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     align-items: baseline;
 }
 .wo_page-movies .wo_header .wo_header-logo {
-   /* background-image: url(/img/FreeMoviesWatching.png);*/
+    background-image: url(/img/main-logo.png);
     height: 132px;
     width: 152px;
 }

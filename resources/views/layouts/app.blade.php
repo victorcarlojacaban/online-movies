@@ -55,7 +55,7 @@
 	<div class='wo_container wo_header-container'>
 		<div class='wo_header__left'>
 		<a class='wo_header__brand track_event' data-event-category='Menu' data-event-label='List Page' data-event-name='Homepage Click' href='/'>
-		<div class='wo_header-logo'><span style="color:white!important">Freemovieswatching.com</span></div>
+		<div class='wo_header-logo'></div>
 		</a>
 		</div>
 		<div class='wo_header__right'>
