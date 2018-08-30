@@ -192,7 +192,7 @@
 				Amazon, Prime Video, Amazon Prime Video, the Amazon logo and Amazon Prime logo are trademarks of Amazon.com, Inc. or its affiliates
 				</span>
 				<span class='wo_footer__copyright-site'>
-				Watch Online
+				Freemovieswatching
 				</span>
 				<span>
 				&copy; 2018
