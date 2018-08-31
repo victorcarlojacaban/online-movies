@@ -28,7 +28,7 @@
 	<link rel="stylesheet" media="all" href="/css/main.css" />
 	<link rel="stylesheet" media="all" href="/css/styles.css" />
 </head>
-<body class='wo_nav-push wo_page wo_page-movies wo_page-video  wo_page-index wo_page--move wo_page--direct wo_locale--us' data-app-id='83' data-site='move'>
+<body class='wo_nav-push wo_page wo_page-movies wo_page-video  wo_page-index wo_page--move wo_page--direct wo_locale--us'>
 
 <div class='wo_side-nav wo_side-nav--right' id='wo_side-nav-right'>
 	<a class='wo_side-nav__brand' href='/'>
@@ -72,7 +72,7 @@
 						</button>
 					</li>
 				</ul>
-				<form class="wo_search-form ">
+				<form class="wo_search-form" action="/movies">
 					
 
 					<div class='wo_search-form__container'>
