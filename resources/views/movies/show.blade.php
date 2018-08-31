@@ -151,14 +151,25 @@ Writer:
 Synopsis
 </div>
 <div class="tabs__toggle">
-Starring
+<!-- Starring -->
 </div>
 <div class="tabs__toggle">
-More Like
+<!-- More Like -->
 </div>
 </div>
 <div class="tabs__tab tabs__tab__active">
 <div class="wo_synopsis">{{ $movie['overview'] }}</div>
+<br/>
+<div class="tabs__toggle tabs__toggle_active">
+Starring
+</div>
+<div class="wo_synopsis">
+	<ul class="wo_video-details">
+@foreach ($casts as $cast)
+		<li>{{ $cast['name'] }}</li>
+	@endforeach
+</ul>
+</div>
 <div class="wo_section__content wo_section--video-main-left">
 <ul class="wo_video-details">
 <li class="wo_video-details__item wo_video-details__tile-items">
@@ -351,92 +362,10 @@ Hide
 
 </div>
 </div>
+
 <div class="tabs__tab">
 <div class="wo_section wo_section--recomended-videos wo_section--video-details rf_no-margin--bottom">
 <h3 class="wo_section__title wo_collapse__toggle wo_collapse--opened rf_text-uppercase">
-<div class="wo_video-thumbs">
-<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/movies/twilight-2008-107837">
-<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url('https://streaming-engine-assets.rftslb.com/posters/image/image/53583/list_page_p182141_p_v8_aj.jpg')"></div>
-<div class="wo_video-thumb__title">
-Twilight
-</div>
-<div class="wo_video-thumb__additional">
-<div class="wo_video-thumb__year">
-2008
-</div>
-<div class="wo_video-thumb__rating">
-<span class="wo_video-thumb__rating__value">
-5.2
-</span>
-</div>
-</div>
-</a>
-<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Fifty Shades of Grey" data-event-name="Movies" href="/movies/fifty-shades-of-grey">
-<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url('https://streaming-engine-assets.rftslb.com/posters/image/image/57323/list_page_p10592929_p_v8_ab.jpg')"></div>
-<div class="wo_video-thumb__title">
-{{ $movie['title'] }}
-</div>
-<div class="wo_video-thumb__additional">
-<div class="wo_video-thumb__year">
-2015
-</div>
-<div class="wo_video-thumb__rating">
-<span class="wo_video-thumb__rating__value">
-4.1
-</span>
-</div>
-</div>
-</a>
-<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Fifty Shades Freed" data-event-name="Movies" href="/movies/fifty-shades-freed">
-<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url('https://streaming-engine-assets.rftslb.com/posters/image/image/703269/list_page_p12656913_p_v8_ab.jpg')"></div>
-<div class="wo_video-thumb__title">
-Fifty Shades Freed
-</div>
-<div class="wo_video-thumb__additional">
-<div class="wo_video-thumb__year">
-2018
-</div>
-<div class="wo_video-thumb__rating">
-<span class="wo_video-thumb__rating__value">
-4.4
-</span>
-</div>
-</div>
-</a>
-<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Half Girlfriend" data-event-name="Movies" href="/movies/half-girlfriend">
-<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url('https://streaming-engine-assets.rftslb.com/posters/image/image/698012/list_page_p14136892_p_v8_aa.jpg')"></div>
-<div class="wo_video-thumb__title">
-Half Girlfriend
-</div>
-<div class="wo_video-thumb__additional">
-<div class="wo_video-thumb__year">
-2017
-</div>
-<div class="wo_video-thumb__rating">
-<span class="wo_video-thumb__rating__value">
-4.2
-</span>
-</div>
-</div>
-</a>
-<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Adrift" data-event-name="Movies" href="/movies/adrift-2018">
-<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url('https://streaming-engine-assets.rftslb.com/posters/image/image/767808/list_page_p15100879_p_v8_aa.jpg')"></div>
-<div class="wo_video-thumb__title">
-Adrift
-</div>
-<div class="wo_video-thumb__additional">
-<div class="wo_video-thumb__year">
-2018
-</div>
-<div class="wo_video-thumb__rating">
-<span class="wo_video-thumb__rating__value">
-6.7
-</span>
-</div>
-</div>
-</a>
-</div>
-
 </h3>
 </div>
 <div class="wo_section__content wo_section--video-main-right">

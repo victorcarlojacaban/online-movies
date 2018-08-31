@@ -64,38 +64,20 @@
 				<ul class='wo_nav'>
 					<li class='wo_nav__item rf_visible-xs-inline-block'>
 						<button class='wo_js_search-toggle-btn wo_header__btn wo_header__btn--search-toggle wo_btn' type='button'>
-							<a href="/tvshows">TV SHOWS</a>
+							@if(request()->path() == 'movies')
+								<a href="/tvshows">TV SHOWS</a>
+							@else
+							    <a href="/movies">Movies</a> 
+							@endif
 						</button>
 					</li>
-					<!-- <li class='wo_nav__item wo_nav__item__menu rf_visible-sm-inline-block rf_visible-xs-inline-block'>
-						<a href="#menu" id="menuBtn" style="font-size: 65px;color:white">
-						  &#9776;
-						</a>
-
-						<div id="menuModal" class="modal">
-						  
-						  <div class="modal-content">
-						    <span class="closeModal"><h1>&times;</h1></span>
-						    <a href="/home" data-genre="action"><h1>Movies</h1></a><br/>
-								<hr>
-							<a href="/tvshows" data-genre="action"><h1>TV shows</a></h1><br/>
-								<hr>
-						  </div>
-
-						</div>
-					</li> -->
 				</ul>
 				<form class="wo_search-form ">
-					<!-- <input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="user_id" id="user_id" value="20605917134482" />
-					<input type="hidden" name="page_load_id" id="page_load_id" value="37677426696532" /> -->
+					
 
 					<div class='wo_search-form__container'>
 						<div class='wo_input-group'>
 							<input type="text" name="search" class="wo_form-control wo_js_search-autocomplete" placeholder="What do you want to watch?" tabindex="-1" autocomplete="off" />
-							<!-- <div class='wo_input-group__btn'>
-								<button name="button" type="submit" class="wo_search-form__btn wo_search-form__btn--submit wo_btn"><span class='wo_search-form__btn-icon'></span>
-								</button>
-							</div> -->
 						</div>
 					</div>
 				</form>
