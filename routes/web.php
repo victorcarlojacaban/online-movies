@@ -16,7 +16,12 @@ Route::get('/', function () {
 });
 
 Route::get('/movies', 'MovieController@index');
-Route::post('loaddata','MovieController@loadDataAjax' );
+Route::post('loaddata','MovieController@loadDataAjax');
+Route::get('/movies/show/{id}', 'MovieController@show');
 
 Route::get('/tvshows', 'TvController@index');
-Route::post('loaddatatv','TvController@loadDataAjax' );
+Route::post('loaddatatv','TvController@loadDataAjax');
+
+Route::get('/privacy','HomeController@privacy');
+Route::get('/dmca','HomeController@dmca');
+Route::get('/aboutus','HomeController@aboutus');

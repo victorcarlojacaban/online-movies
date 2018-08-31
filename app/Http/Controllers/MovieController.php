@@ -11,6 +11,12 @@ use Illuminate\Pagination\LengthAwarePaginator;
 
 class MovieController extends Controller
 {
+    private $movies;
+
+    public function __construct(MovieRepository $movies)
+    {
+        $this->movies = $movies;
+    }
     /**
      * Show popular movies
      *
@@ -139,5 +145,38 @@ class MovieController extends Controller
             
             echo $output;
         }
+    }
+
+    public function show($id)
+    {
+        $movie = Tmdb::getMoviesApi()->getMovie($id);
+
+        $similarMovies = Tmdb::getMoviesApi()->getSimilar($id)['results'];
+
+        $casts = Tmdb::getMoviesApi()->getCredits($id)['cast'];
+
+        $crews = Tmdb::getMoviesApi()->getCredits($id)['crew'];
+
+        // $rate = Tmdb::getMoviesApi()->getRates($id);
+
+        // dd(var_dump($rate));
+
+        $directors = [];
+        $writers = [];
+
+        foreach ($crews as $crew) {
+            if ($crew['job'] == 'Director') {
+                $directors[] = $crew['name'];
+            } 
+
+            if ($crew['department'] == 'Writing') {
+                $writers[] = $crew['name'];
+            } 
+        }
+
+        // dd(var_dump($crew));
+
+        return view('movies.show', compact('movie', 'similarMovies', 'directors', 'writers', 'casts'));
+
     }
  }

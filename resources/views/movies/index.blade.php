@@ -10,9 +10,6 @@
 			<img src="img/video-icon.svg" />
 			<span>Genres</span>
 		</a>
-		<!-- <a class="wo_filter--toggles__item wo_filter-toggle-filters" href="#"><img src="/img/filter-icon.svg" />
-			<span>Filters</span>
-		</a> -->
 	</div>
 
 	<div id="wo_genre-filters_mobile" class="wo_genre-filters">
@@ -41,37 +38,47 @@
 			<div class='wo_content_wrapper'>
 				<div class='rf_row'>
 
-	<div class='rf_col-sm-12'>
-		@include('include.slide-banner')
-	</div>
-</div>
+			<div class='rf_col-sm-12'>
+				@include('include.slide-banner')
+			</div>
+		</div>
 <div class="wo_movie-items">
 	<div class="wo_tittle-list" id="load-data">
 			@foreach ($movies as $movie)
 				<?php 
 					
 					$posterImage = !empty($movie['poster_path']) ? "https://image.tmdb.org/t/p/w154".$movie['poster_path'] : '/no-poster.jpg';
+
+					$movieId = $movie['id'];
 				?>
 
 				<div class="wo_movie-item__link">
 					<div class="wo_movie-item__poster">
-						<div class="wo_movie-item__poster" style="background-image: url(&quot; {{ $posterImage }} &quot;);">
-			
+						<div class="wo_movie-item__poster" onclick="window.location.href='/movies/show/{{ $movieId }}'" style="background-image: url(&quot; {{ $posterImage }} &quot;);">
 						</div>
-						<div class="wo_movie-item__details"><a href="#" data-event-name="See details click" data-event-label="Fifty Shades Darker" data-event-category="List Page" class="wo_movie-item__wrap track_event"><div class="wo_movie-item__title">{{ $movie['title'] }}</div><div class="wo_movie-item__info"><span class="wo_movie-item__info__year">{{ date("Y",strtotime($movie['release_date'])) }} </span><div class="wo_movie-item__info__rating"><div class="rating">
+						<div class="wo_movie-item__details"><a href="/movies/show/{{ $movie['id'] }}" class="wo_movie-item__wrap track_event"><div class="wo_movie-item__title">{{ $movie['title'] }}</div><div class="wo_movie-item__info"><span class="wo_movie-item__info__year">{{ date("Y",strtotime($movie['release_date'])) }} </span><div class="wo_movie-item__info__rating"><div class="rating">
 						<span style="color:#fdc228">☆</span>
 					</div>&nbsp;{{ $movie['vote_average'] }}</div></div><p class="wo_movie-item__description">
 							{{ $movie['overview'] }}
 						</p></a></div>
 					</div>
-				<div class="wo_movie-item__title">{{ $movie['title'] }}</div>
-				<div class="wo_movie-item__info"><span class="wo_movie-item__info__year">{{ date("Y",strtotime($movie['release_date'])) }}</span><div class="wo_movie-item__info__rating">
+				<div class="wo_movie-item__title">
+					<a style="color:white" href="/movies/show/{{ $movie['id'] }}">
+						{{ $movie['title'] }}
+					</a>
+				</div>
+				<div class="wo_movie-item__info">
+					<span class="wo_movie-item__info__year">
+						{{ date("Y",strtotime($movie['release_date'])) }}
+					</span>
+				<div class="wo_movie-item__info__rating">
 					<div class="rating">
 						<span style="color:#fdc228">☆</span>
 					</div>&nbsp;
 
 					{{ $movie['vote_average'] }}
-				</div></div>
+				</div>
+				</div>
 
 				</div>
 

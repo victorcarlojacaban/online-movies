@@ -28,7 +28,8 @@
 	<link rel="stylesheet" media="all" href="/css/main.css" />
 	<link rel="stylesheet" media="all" href="/css/styles.css" />
 </head>
-<body class='   wo_nav-push wo_page wo_page-movies  wo_page-index wo_page--move wo_page--direct wo_locale--us' data-app-id='83' data-site='move'>
+<body class='wo_nav-push wo_page wo_page-movies wo_page-video  wo_page-index wo_page--move wo_page--direct wo_locale--us' data-app-id='83' data-site='move'>
+
 <div class='wo_side-nav wo_side-nav--right' id='wo_side-nav-right'>
 	<a class='wo_side-nav__brand' href='/'>
 		<div class='wo_header-logo'></div>
@@ -127,16 +128,13 @@
 	</h3>
 	<ul class='wo_nav'>
 		<li class='wo_nav__item'>
-			<a class="wo_nav__link" href="/sitemap.xml">Sitemap</a>
+			<a class="wo_nav__link" href="/privacy">Privacy Police</a>
 		</li>
 		<li class='wo_nav__item'>
-			<a class="wo_nav__link" data-event-category="Menu" data-event-label="List Page" href="#">Contact Us</a>
+			<a class="wo_nav__link" data-event-category="Menu" data-event-label="List Page" href="/aboutus">About Us</a>
 		</li>
 		<li class='wo_nav__item'>
-			<a class="wo_nav__link" data-event-category="Menu" data-event-label="List Page" href="#">Terms</a>
-		</li>
-		<li class='wo_nav__item'>
-			<a class="wo_nav__link" data-event-category="Menu" data-event-label="List Page" href="#">Privacy</a>
+			<a class="wo_nav__link" data-event-category="Menu" data-event-label="List Page" href="/dmca">DMCA</a>
 		</li>
 	</ul>
 	</div>

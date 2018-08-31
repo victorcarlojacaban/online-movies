@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55" height="55" viewBox="0 0 55 55">
+    <defs>
+        <text id="b" fill="#121212" font-family="EncodeSansNarrow-Bold, Encode Sans Narrow" font-size="6" font-style="condensed" font-weight="bold">
+            <tspan x="-.953" y="21.44">BEST CHOICE</tspan>
+        </text>
+        <filter id="a" width="100%" height="100%" x="0%" y="0%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feColorMatrix in="shadowOffsetOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.176913496 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#F7A827" d="M.145 52.384c.004 2.826 4.251 2.289 4.251 2.289v-11.12S.145 46.046.145 52.383zM52.406.057c2.892.004 2.306 4.251 2.306 4.251h-11.07S46.134.057 52.406.057z"/>
+        <path fill="#000" d="M8.008 24.774C18.2 14.692 22.358 10.534 25.163 7.92c2.593-2.784 5.336-3.582 5.417-3.612h17.047L4.397 47.733V30.492c.03-.081 1.082-3.08 3.61-5.718z" opacity=".076"/>
+        <path fill="#FED837" d="M3.415 21.642C14.491 10.687 19.01 6.168 22.057 3.327 24.875.302 27.856.089 27.943.057H52.8s-4.831.218-9.485 4.578L4.724 43.553C.245 47.997.143 52.711.143 52.711V27.855c.033-.087.524-3.345 3.271-6.213z"/>
+        <g fill="#121212" transform="rotate(-45 17.78 18.94)">
+            <use filter="url(#a)" xlink:href="#b"/>
+            <use xlink:href="#b"/>
+        </g>
+    </g>
+</svg>

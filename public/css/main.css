@@ -222,7 +222,7 @@
 }
 @font-face {
     font-family: fontello;
-    src: url(/assets/fontello/fontello-c74c40f836f79fd37ea809057411de493b76b7b074359a8cd562e009d7c05aa6.ttf) format("truetype");
+    src: url(/img/fontello.ttf) format("truetype");
     font-weight: 300;
     font-style: normal;
 }
@@ -3043,7 +3043,7 @@ body.wo_page-video .wo_rating__total {
     display: none;
 }
 .wo_streaming-sites-buttons__item--amazon_prime .image {
-    background: url(/assets/move/streaming_sites/amazon_prime-8859607c686568aad3d41e7af84a03b22bd06df2e1f692ec2897ac94c8a4133d.svg) no-repeat left;
+    background: url(/img/amazon_prime.svg) no-repeat left;
     height: 40px;
     width: 100px;
 }
@@ -3059,7 +3059,7 @@ body.wo_page-video .wo_rating__total {
     display: none;
 }
 .wo_streaming-sites-buttons__item--cbs .image {
-    background: url(/assets/move/streaming_sites/cbs-b29b020a0948f5a052af973ba6ed96baa89e7aba4adb38cf05df7d9375c97ee9.svg) no-repeat left;
+    background: url(/img/cbs.svg) no-repeat left;
     height: 40px;
     width: 100px;
 }
@@ -3067,7 +3067,7 @@ body.wo_page-video .wo_rating__total {
     display: none;
 }
 .wo_streaming-sites-buttons__item--cinemax .image {
-    background: url(/assets/move/streaming_sites/cinemax-831546e3efea13aec74e55e33119113efca73779faf54d3f80239de40f981f5b.svg) no-repeat left;
+    background: url(/img/cinemax.svg) no-repeat left;
     height: 40px;
     width: 100px;
 }
@@ -3131,7 +3131,7 @@ body.wo_page-video .wo_rating__total {
     display: none;
 }
 .wo_streaming-sites-buttons__item--fubo .image {
-    background: url(/assets/move/streaming_sites/fubo-4dfc131bb32fd0f24c7cfa8f108392502c0131791ea6afd49e8a7c432375bfcf.svg) no-repeat left;
+    background: url(/img/fubo.svg) no-repeat left;
     height: 40px;
     width: 100px;
 }
@@ -3147,7 +3147,7 @@ body.wo_page-video .wo_rating__total {
     display: none;
 }
 .wo_streaming-sites-buttons__item--hbo .image {
-    background: url(/assets/move/streaming_sites/hbo-56a1f19a4e8779bd8846d5e63b84ebae04695a5771e20b323135c05fbae88c5b.svg) no-repeat left;
+    background: url(/img/hbo.svg) no-repeat left;
     height: 40px;
     width: 100px;
 }
@@ -3179,7 +3179,7 @@ body.wo_page-video .wo_rating__total {
     display: none;
 }
 .wo_streaming-sites-buttons__item--itunes .image {
-    background: url(/assets/move/streaming_sites/itunes-e8e2f11f887ae3fe6838c5761b862736023926b8cc5fcdbe4bedb0d4b0fa24d5.svg) no-repeat left;
+    background: url(/img/itunes.svg) no-repeat left;
     height: 40px;
     width: 100px;
 }
@@ -3227,7 +3227,7 @@ body.wo_page-video .wo_rating__total {
     display: none;
 }
 .wo_streaming-sites-buttons__item--showtime .image {
-    background: url(/assets/move/streaming_sites/showtime-6ebbdc164944e7ccf4b1ee384d4d2768edcd1141b69e7cab1a1b272f177b18f4.svg) no-repeat left;
+    background: url(/img/showtimesub.svg) no-repeat left;
     height: 40px;
     width: 100px;
 }
@@ -3235,7 +3235,7 @@ body.wo_page-video .wo_rating__total {
     display: none;
 }
 .wo_streaming-sites-buttons__item--showtimesub .image {
-    background: url(/assets/move/streaming_sites/showtimesub-6ebbdc164944e7ccf4b1ee384d4d2768edcd1141b69e7cab1a1b272f177b18f4.svg) no-repeat left;
+    background: url(/img/showtimesub.svg) no-repeat left;
     height: 40px;
     width: 100px;
 }
@@ -3283,7 +3283,7 @@ body.wo_page-video .wo_rating__total {
     display: none;
 }
 .wo_streaming-sites-buttons__item--vudu .image {
-    background: url(/assets/move/streaming_sites/vudu-0fb33e08dc7f3a7a3f9a7c0b13ab5d0025d15f715e94b0ebf7b6afa152fb476d.svg) no-repeat left;
+    background: url(/img/vudu.svg) no-repeat left;
     height: 40px;
     width: 100px;
 }
@@ -5657,7 +5657,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     width: 100%;
     max-width: 60px;
     height: 20px;
-    background-image: url(/assets/logos_white/amazon_prime-8859607c686568aad3d41e7af84a03b22bd06df2e1f692ec2897ac94c8a4133d.svg);
+    background-image: url(/img/amazon_prime.svg);
     font-size: 0 !important;
     margin-bottom: -3px;
 }
@@ -5681,7 +5681,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     width: 100%;
     max-width: 60px;
     height: 20px;
-    background-image: url(/assets/logos_white/cinemax-5c62ac889d22134deb1a4aae425913c391412d5f186ab507931c79d8a5a88c35.svg);
+    background-image: url(/img/cinemax-02.svg);
     font-size: 0 !important;
     margin-bottom: -3px;
 }
@@ -6898,7 +6898,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     background-image: url(/assets/move/streaming_sites/amazon-8859607c686568aad3d41e7af84a03b22bd06df2e1f692ec2897ac94c8a4133d.svg);
 }
 .cta-buttons-static .cta-button.amazon_prime .label {
-    background-image: url(/assets/move/streaming_sites/amazon_prime-8859607c686568aad3d41e7af84a03b22bd06df2e1f692ec2897ac94c8a4133d.svg);
+    background-image: url(/img/amazon_prime.svg);
 }
 .cta-buttons-static .cta-button.amazon-prime .label {
     background-image: url(/images/move/streaming_sites/amazon-prime.svg);
@@ -6907,10 +6907,10 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     background-image: url(/images/move/streaming_sites/amazon_white.svg);
 }
 .cta-buttons-static .cta-button.cbs .label {
-    background-image: url(/assets/move/streaming_sites/cbs-b29b020a0948f5a052af973ba6ed96baa89e7aba4adb38cf05df7d9375c97ee9.svg);
+    background-image: url(/img/cbs.svg);
 }
 .cta-buttons-static .cta-button.cinemax .label {
-    background-image: url(/assets/move/streaming_sites/cinemax-831546e3efea13aec74e55e33119113efca73779faf54d3f80239de40f981f5b.svg);
+    background-image: url(/img/cinemax.svg);
 }
 .cta-buttons-static .cta-button.curiositystreamstandard .label {
     background-image: url(/assets/move/streaming_sites/curiositystreamstandard-fdec1ba906bf0989231a406b390c43b6a3d8452b70163dac1d7ff2414b35e299.svg);
@@ -6928,16 +6928,16 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     background-image: url(/assets/move/streaming_sites/fullscreen-3f1a63b8050fbb17866f381eaffc8fbca1a82076287aed87b2f6cda856c6a4da.svg);
 }
 .cta-buttons-static .cta-button.fubo .label {
-    background-image: url(/assets/move/streaming_sites/fubo-4dfc131bb32fd0f24c7cfa8f108392502c0131791ea6afd49e8a7c432375bfcf.svg);
+    background-image: url(/img/fubo.svg);
 }
 .cta-buttons-static .cta-button.hbo .label {
-    background-image: url(/assets/move/streaming_sites/hbo-56a1f19a4e8779bd8846d5e63b84ebae04695a5771e20b323135c05fbae88c5b.svg);
+    background-image: url(/img/hbo.svg);
 }
 .cta-buttons-static .cta-button.hulu .label {
     background-image: url(/assets/move/streaming_sites/hulu-cec5b32b901424c66294cc0e367514bc9dc35c6c00181b1058c11d2e0bff2d02.svg);
 }
 .cta-buttons-static .cta-button.itunes .label {
-    background-image: url(/assets/move/streaming_sites/itunes-e8e2f11f887ae3fe6838c5761b862736023926b8cc5fcdbe4bedb0d4b0fa24d5.svg);
+    background-image: url(/img/itunes.svg);
 }
 .cta-buttons-static .cta-button.netflix .label {
     background-image: url(/assets/move/streaming_sites/netflix-438e6de5d43a937cbf7cff4f88900b48124720715518422b4f1421eea125222b.svg);
@@ -6946,10 +6946,10 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     background-image: url(/assets/move/streaming_sites/nowtv-d6b291302c9a0a41848e8c7f94c8498dc319ed787b727b875b3e7d599b58ef9a.svg);
 }
 .cta-buttons-static .cta-button.showtime .label {
-    background-image: url(/assets/move/streaming_sites/showtime-6ebbdc164944e7ccf4b1ee384d4d2768edcd1141b69e7cab1a1b272f177b18f4.svg);
+    background-image: url(/img/showtimesub.svg);
 }
 .cta-buttons-static .cta-button.showtimesub .label {
-    background-image: url(/assets/move/streaming_sites/showtimesub-6ebbdc164944e7ccf4b1ee384d4d2768edcd1141b69e7cab1a1b272f177b18f4.svg);
+    background-image: url(/img/showtimesub.svg);
 }
 .cta-buttons-static .cta-button.starz .label {
     background-image: url(/assets/move/streaming_sites/starz-8fdd95074645c815bb7baab1a3f79714fb86d3c5f078b28fe580f331aa0405f4.svg);
@@ -6961,7 +6961,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     background-image: url(/images/move/streaming_sites/starzplay.svg);
 }
 .cta-buttons-static .cta-button.vudu .label {
-    background-image: url(/assets/move/streaming_sites/vudu-0fb33e08dc7f3a7a3f9a7c0b13ab5d0025d15f715e94b0ebf7b6afa152fb476d.svg);
+    background-image: url(/img/vudu.svg);
 }
 .cta-buttons-static .cta-button.masterpiece .label {
     background-image: url(/assets/move/streaming_sites/masterpiece-e5aec1f888e6a98826c1650482a85b9d10a272970acba55afe456d63aace9f80.svg);
@@ -10139,11 +10139,11 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     font-size: 0;
 }
 .wo_listing-page-wrapper .wo_movie-item__btn.amazon .wo_movie-item__label {
-    background-image: url(/assets/logos_white/amazon-8859607c686568aad3d41e7af84a03b22bd06df2e1f692ec2897ac94c8a4133d.svg);
+    background-image: url(/img/amazon_prime.svg);
     font-size: 0;
 }
 .wo_listing-page-wrapper .wo_movie-item__btn.amazon_prime .wo_movie-item__label {
-    background-image: url(/assets/logos_white/amazon_prime-8859607c686568aad3d41e7af84a03b22bd06df2e1f692ec2897ac94c8a4133d.svg);
+    background-image: url(/amazon_prime.svg);
     font-size: 0;
 }
 .wo_listing-page-wrapper .wo_movie-item__btn.amazon-prime .wo_movie-item__label {
@@ -10159,7 +10159,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     font-size: 0;
 }
 .wo_listing-page-wrapper .wo_movie-item__btn.cinemax .wo_movie-item__label {
-    background-image: url(/assets/logos_white/cinemax-5c62ac889d22134deb1a4aae425913c391412d5f186ab507931c79d8a5a88c35.svg);
+    background-image: url(/img/cinemax-02.svg);
     font-size: 0;
 }
 .wo_listing-page-wrapper .wo_movie-item__btn.curiositystreamstandard .wo_movie-item__label {
@@ -11001,7 +11001,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     top: -5px;
     left: -5px;
     display: block;
-    background-image: url(/assets/move/helpers/top-left-48f31d294c54f1ce7ab8228916130aedd8c0244c769a8ef2af9ff7a07d241d2a.svg);
+    background-image: url(/img/top-left.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -11065,7 +11065,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     top: -5px;
     left: -5px;
     display: block;
-    background-image: url(/assets/move/helpers/top-left-48f31d294c54f1ce7ab8228916130aedd8c0244c769a8ef2af9ff7a07d241d2a.svg);
+    background-image: url(/img/top-left.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
