@@ -86,16 +86,16 @@
 					</li> -->
 				</ul>
 				<form class="wo_search-form ">
-					<input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="user_id" id="user_id" value="20605917134482" />
-					<input type="hidden" name="page_load_id" id="page_load_id" value="37677426696532" />
+					<!-- <input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="user_id" id="user_id" value="20605917134482" />
+					<input type="hidden" name="page_load_id" id="page_load_id" value="37677426696532" /> -->
 
 					<div class='wo_search-form__container'>
 						<div class='wo_input-group'>
-							<input type="text" name="q" class="wo_form-control wo_js_search-autocomplete" placeholder="What do you want to watch?" tabindex="-1" autocomplete="off" />
-							<div class='wo_input-group__btn'>
+							<input type="text" name="search" class="wo_form-control wo_js_search-autocomplete" placeholder="What do you want to watch?" tabindex="-1" autocomplete="off" />
+							<!-- <div class='wo_input-group__btn'>
 								<button name="button" type="submit" class="wo_search-form__btn wo_search-form__btn--submit wo_btn"><span class='wo_search-form__btn-icon'></span>
 								</button>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</form>

@@ -7,18 +7,10 @@ use Tmdb\Repository\MovieRepository;
 use Tmdb\Model\Query\Discover\DiscoverMoviesQuery;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
-use Illuminate\Pagination\LengthAwarePaginator;
 
 class MovieController extends Controller
 {
-    private $movies;
-
-    public function __construct(MovieRepository $movies)
-    {
-        $this->movies = $movies;
-    }
-    /**
-     * Show popular movies
+    /* Show popular movies
      *
      * @return Response
      */
@@ -27,6 +19,7 @@ class MovieController extends Controller
         $genreData = $request->genre;
         $movieType = $request->type;
         $movieTv   = $request->tvshow;
+        $search    = $request->search;
 
         if ($genreData) {
             $movies = Tmdb::getGenresApi()->getMovies($genreData, ['page' => 1])['results'];
@@ -43,11 +36,13 @@ class MovieController extends Controller
                     break;
                 default :
                     $movies = Tmdb::getMoviesApi()->getPopular(['page' => 1])['results'];
-                     break;
+                    break;
             }
 
         } elseif($movieTv) {
             $movies = Tmdb::getTvApi()->getPopular(['page' => 1])['results'];
+        } elseif($search) {
+            $movies = Tmdb::getSearchApi()->searchMovies($search)['results'];
         } else {
             $movies = Tmdb::getMoviesApi()->getPopular(['page' => 1])['results'];
         }
@@ -96,10 +91,7 @@ class MovieController extends Controller
             $movies = Tmdb::getMoviesApi()->getPopular(['page' => $id])['results'];
         }
 
-        
-        
         if ($movies) {
-
             foreach ($movies as $movie) {
                         
                 $posterImage = $movie['poster_path'];
