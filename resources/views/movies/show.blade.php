@@ -295,7 +295,7 @@ Cast
 				$castImage = !empty($cast['profile_path']) ? "https://image.tmdb.org/t/p/w154".$cast['profile_path'] : '/img/no-profile.png';
 			?>
 
-		<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/movies/twilight-2008-107837">
+		<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="#">
 		<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $castImage  }})""></div>
 		<div class="wo_video-thumb__title">
 			{{ $cast['name'] }}
@@ -318,7 +318,7 @@ Cast
 	</div>
 </div>
 
-<div class="tabs__toggle tabs__toggle_active">
+<div class="tabs__toggle tabs__toggle_active" style="margin-top: -30px;">
 More Like
 </div>
 <div class="tabs__tab tabs__tab__active" style="margin-top: -30px;">
@@ -340,7 +340,7 @@ More Like
 				$posterImageSimilar = !empty($similarMovie['poster_path']) ? "https://image.tmdb.org/t/p/w154".$similarMovie['poster_path'] : '/no-poster.jpg';
 			?>
 
-		<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/movies/twilight-2008-107837">
+		<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="">
 		<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $posterImageSimilar  }})"></div>
 		<div class="wo_video-thumb__title">
 		{{ $similarMovie['title'] }}
@@ -552,7 +552,7 @@ Writer:
 </li>
 </ul>
 
-<ul class="wo_streaming-sites-buttons">
+<ul class="wo_streaming-sites-buttons" style="margin-top: -50px;">
 <li class="wo_streaming-sites-buttons__select-box">
 <span class="wo_streaming-sites-buttons__select-row">
 <label for="availability">Type</label>
@@ -810,7 +810,7 @@ Not all titles featured are available in each service.
 </div>
 <div class="wo_section wo_section--synopsis rf_no-margin--bottom rf_hidden-xs">
 <h3 class="wo_section__title wo_js_collapse-toggle wo_collapse__toggle wo_collapse--opened rf_text-uppercase">
-Synopsis
+
 </h3>
 <div class="wo_section__content wo_collapse__content wo_collapse--expanded">
 <div class="wo_synopsis">{{ $movie['overview'] }}</div>
@@ -871,7 +871,7 @@ More Like {{ $movie['title'] }}
 		$posterImageSimilar = !empty($similarMovie['poster_path']) ? "https://image.tmdb.org/t/p/w154".$similarMovie['poster_path'] : '/no-poster.jpg';
 	?>
 
-<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/movies/twilight-2008-107837">
+<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="#">
 <div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $posterImageSimilar  }})"></div>
 <div class="wo_video-thumb__title">
 {{ $similarMovie['title'] }}

@@ -295,7 +295,7 @@ Cast
         $castImage = !empty($cast['profile_path']) ? "https://image.tmdb.org/t/p/w154".$cast['profile_path'] : '/img/no-profile.png';
       ?>
 
-    <a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/movies/twilight-2008-107837">
+    <a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="#">
     <div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $castImage  }})""></div>
     <div class="wo_video-thumb__title">
       {{ $cast['name'] }}
@@ -340,7 +340,7 @@ More Like
         $posterImageSimilar = !empty($similarMovie['poster_path']) ? "https://image.tmdb.org/t/p/w154".$similarMovie['poster_path'] : '/no-poster.jpg';
       ?>
 
-    <a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/movies/twilight-2008-107837">
+    <a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="#">
     <div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $posterImageSimilar  }})"></div>
     <div class="wo_video-thumb__title">
     {{ $similarMovie['name'] }}
@@ -871,7 +871,7 @@ More Like {{ $movie['name'] }}
     $posterImageSimilar = !empty($similarMovie['poster_path']) ? "https://image.tmdb.org/t/p/w154".$similarMovie['poster_path'] : '/no-poster.jpg';
   ?>
 
-<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/movies/twilight-2008-107837">
+<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="#">
 <div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $posterImageSimilar  }})"></div>
 <div class="wo_video-thumb__title">
 {{ $similarMovie['name'] }}
