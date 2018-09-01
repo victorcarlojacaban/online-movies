@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-@inject('image', 'Tmdb\Helper\ImageHelper')
 	<div class="wo_page-row wo_page-row--expanded">
 <div class="wo_container">
 <div>
@@ -256,8 +255,10 @@ Rated:
 <span class="wo_video-details__name">
 Director:
 </span>
-<span class="wo_video-details__value">
-James Foley, Peter Bodnarus, Craig Humphries
+<span class="wo_video-detailstails__value">
+	@foreach($directors as $director)
+		{{ $director }},
+	@endforeach
 </span>
 </li>
 <li class="wo_video-details__item">
@@ -265,7 +266,9 @@ James Foley, Peter Bodnarus, Craig Humphries
 Writer:
 </span>
 <span class="wo_video-details__value">
-Niall Leonard
+	@foreach($writers as $writer)
+		{{ $writer }},
+	@endforeach
 </span>
 </li>
 </ul>
@@ -523,8 +526,10 @@ Rated:
 <span class="wo_video-details__name">
 Director:
 </span>
-<span class="wo_video-details__value">
-James Foley, Peter Bodnarus, Craig Humphries
+<span class="wo_video-detailstails__value">
+	@foreach($directors as $director)
+		{{ $director }},
+	@endforeach
 </span>
 </li>
 <li class="wo_video-details__item">
@@ -532,7 +537,9 @@ James Foley, Peter Bodnarus, Craig Humphries
 Writer:
 </span>
 <span class="wo_video-details__value">
-Niall Leonard
+	@foreach($writers as $writer)
+		{{ $writer }},
+	@endforeach
 </span>
 </li>
 </ul>

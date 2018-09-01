@@ -108,24 +108,7 @@ Rated:
 </span> -->
 </li>
 <li class="wo_video-details__item">
-<span class="wo_video-details__name">
-Director:
-</span>
-<span class="wo_video-detailstails__value">
-  @foreach($directors as $director)
-    {{ $director }},
-  @endforeach
-</span>
-</li>
-<li class="wo_video-details__item">
-<span class="wo_video-details__name">
-Writer:
-</span>
-<span class="wo_video-details__value">
-  @foreach($writers as $writer)
-    {{ $writer }},
-  @endforeach
-</span>
+
 </li>
 </ul>
 
@@ -252,20 +235,7 @@ Rated:
 </span> -->
 </li>
 <li class="wo_video-details__item">
-<span class="wo_video-details__name">
-Director:
-</span>
-<span class="wo_video-details__value">
-James Foley, Peter Bodnarus, Craig Humphries
-</span>
-</li>
-<li class="wo_video-details__item">
-<span class="wo_video-details__name">
-Writer:
-</span>
-<span class="wo_video-details__value">
-Niall Leonard
-</span>
+
 </li>
 </ul>
 
@@ -519,20 +489,7 @@ Rated:
 </span> -->
 </li>
 <li class="wo_video-details__item">
-<span class="wo_video-details__name">
-Director:
-</span>
-<span class="wo_video-details__value">
-James Foley, Peter Bodnarus, Craig Humphries
-</span>
-</li>
-<li class="wo_video-details__item">
-<span class="wo_video-details__name">
-Writer:
-</span>
-<span class="wo_video-details__value">
-Niall Leonard
-</span>
+
 </li>
 </ul>
 

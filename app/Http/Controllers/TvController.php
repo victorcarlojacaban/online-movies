@@ -118,11 +118,6 @@ class TvController extends Controller
             } 
         }
 
-        // dd(var_dump($crew));
-        // 
         return view('tvshows.show', compact('movie', 'similarMovies', 'directors', 'writers', 'casts'));
-
-        // return view('tvshows.show');
-
     }
  }
