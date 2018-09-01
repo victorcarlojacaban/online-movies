@@ -164,7 +164,7 @@ img {vertical-align: middle;}
 }
 
 
-.button {
+.button-load {
     outline: 0;
     padding: 5px 12px;
     display: block;
@@ -183,7 +183,7 @@ img {vertical-align: middle;}
     -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Firefox */
     -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.2); /* Safari, Chrome */
 }
-.button:hover {
+.button-load:hover {
     color: #fff;
     background: #4C5A64; /* old browsers */
     background: -moz-linear-gradient(top, #4C5A64 3%, #404F5A 4%, #2E3940 100%); /* firefox */
