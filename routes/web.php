@@ -21,6 +21,7 @@ Route::get('/movies/show/{id}', 'MovieController@show');
 
 Route::get('/tvshows', 'TvController@index');
 Route::post('loaddatatv','TvController@loadDataAjax');
+Route::get('/tvshows/show/{id}', 'TvController@show');
 
 Route::get('/privacy','HomeController@privacy');
 Route::get('/dmca','HomeController@dmca');

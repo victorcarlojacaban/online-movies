@@ -19,6 +19,11 @@ class TvController extends Controller
     public function index(Request $request)
     {
         $tvshows = Tmdb::getTvApi()->getPopular(['page' => 1])['results'];
+        $search    = $request->search;
+
+        if ($search) {
+            $tvshows = Tmdb::getSearchApi()->searchTv($search)['results'];
+        }
 
         $genres = Tmdb::getGenresApi()->getMovieGenres();
 
@@ -86,5 +91,38 @@ class TvController extends Controller
             
             echo $output;
         }
+    }
+
+    public function show($id)
+    {
+        $movie = Tmdb::getTvApi()->getTvshow($id);
+
+        // dd(var_dump($movie));
+
+        $similarMovies = Tmdb::getTvApi()->getSimilar($id)['results'];
+
+        $casts = Tmdb::getTvApi()->getCredits($id)['cast'];
+
+        $crews = Tmdb::getTvApi()->getCredits($id)['crew'];
+
+        $directors = [];
+        $writers = [];
+
+        foreach ($crews as $crew) {
+            if ($crew['job'] == 'Director') {
+                $directors[] = $crew['name'];
+            } 
+
+            if ($crew['department'] == 'Writing') {
+                $writers[] = $crew['name'];
+            } 
+        }
+
+        // dd(var_dump($crew));
+        // 
+        return view('tvshows.show', compact('movie', 'similarMovies', 'directors', 'writers', 'casts'));
+
+        // return view('tvshows.show');
+
     }
  }

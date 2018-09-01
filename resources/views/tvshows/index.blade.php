@@ -77,9 +77,11 @@
 
 			@endforeach
 			<center>
+				@if ($tvshows)
 				<div id="remove-row" style="color:black">
                     <button id="btn-more" data-id="1" class="button">Load More TV Shows</button>
                 </div>
+                @endif
         	</center>
         	<br/>
 		</div>
