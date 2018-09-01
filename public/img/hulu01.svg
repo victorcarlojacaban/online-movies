@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 34" style="enable-background:new 0 0 100 34;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F2F2F2;}
+	.st1{fill:#212224;}
+	.st2{fill:#09C78E;}
+	.st3{clip-path:url(#SVGID_2_);}
+	.st4{clip-path:url(#SVGID_6_);}
+	.st5{fill:none;}
+	.st6{fill:#0F1011;}
+	.st7{fill:#FFFFFF;}
+	.st8{fill:none;stroke:#E6E6E6;stroke-miterlimit:10;}
+	.st9{fill:#333333;}
+	.st10{fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;}
+	.st11{fill:#FFFFFF;stroke:#089A6F;stroke-miterlimit:10;}
+	.st12{fill:#089A6F;}
+	.st13{fill:none;stroke:#089A6F;stroke-miterlimit:10;}
+	.st14{fill:#24E2A3;}
+	.st15{fill:url(#SVGID_11_);}
+	.st16{fill:none;stroke:#09C78E;stroke-width:2;stroke-miterlimit:10;}
+	.st17{fill:#FFFFFF;stroke:#09C78E;stroke-miterlimit:10;}
+	.st18{fill:url(#SVGID_12_);}
+	.st19{fill:#474747;}
+	.st20{fill:#5B5B5B;}
+	.st21{fill:url(#SVGID_13_);}
+	.st22{fill:none;stroke:url(#SVGID_14_);stroke-miterlimit:10;}
+	.st23{fill:url(#SVGID_15_);}
+	.st24{fill:none;stroke:url(#SVGID_16_);stroke-miterlimit:10;}
+	.st25{fill:#A5A5A5;}
+	.st26{opacity:0.66;fill:#FFFFFF;}
+	.st27{opacity:0.58;fill:#FFFFFF;}
+	.st28{fill:url(#SVGID_19_);stroke:#70E0F9;stroke-miterlimit:10;}
+	.st29{opacity:0.1;fill:#A05B1D;}
+	.st30{opacity:8.000000e-02;fill:#93551C;}
+	.st31{opacity:0.85;fill:#FFFFFF;}
+	.st32{fill:url(#SVGID_20_);stroke:#70E0F9;stroke-miterlimit:10;}
+	.st33{fill:#64D0ED;}
+	.st34{clip-path:url(#SVGID_24_);}
+	.st35{fill:#4C4C4C;}
+	.st36{clip-path:url(#SVGID_28_);}
+	.st37{clip-path:url(#SVGID_30_);}
+	.st38{clip-path:url(#SVGID_34_);}
+	.st39{clip-path:url(#SVGID_36_);}
+	.st40{opacity:0.6;fill:url(#SVGID_39_);}
+	.st41{clip-path:url(#SVGID_41_);}
+	.st42{opacity:0.6;fill:url(#SVGID_44_);}
+	.st43{opacity:0.2;fill:#333333;}
+	.st44{fill:url(#SVGID_45_);}
+	.st45{opacity:0.6;fill:url(#SVGID_46_);}
+	.st46{fill:#B3B3B3;}
+	.st47{fill:url(#SVGID_47_);}
+	.st48{opacity:0.3;fill:#333333;}
+	.st49{fill:#F2F2F2;stroke:#E6E6E6;stroke-miterlimit:10;}
+	.st50{fill:url(#SVGID_48_);stroke:#E6E6E6;stroke-miterlimit:10;}
+	.st51{fill:url(#SVGID_49_);}
+	.st52{fill:none;stroke:url(#SVGID_50_);stroke-miterlimit:10;}
+	.st53{filter:url(#Adobe_OpacityMaskFilter);}
+	.st54{opacity:0.29;mask:url(#SVGID_51_);}
+	.st55{fill:#0F3738;}
+	.st56{opacity:0.31;fill:#FFFFFF;}
+	.st57{opacity:0.5;fill:#FFFFFF;}
+	.st58{opacity:0.1;fill:#089A6F;}
+	.st59{fill:url(#SVGID_52_);}
+	.st60{fill:none;stroke:url(#SVGID_53_);stroke-miterlimit:10;}
+	.st61{filter:url(#Adobe_OpacityMaskFilter_1_);}
+	.st62{mask:url(#SVGID_54_);}
+	.st63{fill:#B6BAB9;}
+	.st64{fill:none;stroke:#B6BAB9;stroke-miterlimit:10;}
+	.st65{filter:url(#Adobe_OpacityMaskFilter_2_);}
+	.st66{opacity:0.29;mask:url(#SVGID_55_);}
+	.st67{fill:url(#SVGID_56_);}
+	.st68{fill:none;stroke:url(#SVGID_57_);stroke-miterlimit:10;}
+	.st69{filter:url(#Adobe_OpacityMaskFilter_3_);}
+	.st70{opacity:0.29;mask:url(#SVGID_58_);}
+	.st71{fill:url(#SVGID_59_);}
+	.st72{fill:none;stroke:url(#SVGID_60_);stroke-miterlimit:10;}
+	.st73{filter:url(#Adobe_OpacityMaskFilter_4_);}
+	.st74{mask:url(#SVGID_61_);}
+	.st75{filter:url(#Adobe_OpacityMaskFilter_5_);}
+	.st76{opacity:0.29;mask:url(#SVGID_62_);}
+	.st77{fill:url(#SVGID_63_);}
+	.st78{fill:none;stroke:url(#SVGID_64_);stroke-miterlimit:10;}
+	.st79{filter:url(#Adobe_OpacityMaskFilter_6_);}
+	.st80{opacity:0.29;mask:url(#SVGID_65_);}
+	.st81{fill:url(#SVGID_66_);}
+	.st82{fill:none;stroke:url(#SVGID_67_);stroke-miterlimit:10;}
+	.st83{filter:url(#Adobe_OpacityMaskFilter_7_);}
+	.st84{opacity:0.29;mask:url(#SVGID_68_);}
+	.st85{fill:url(#SVGID_69_);}
+	.st86{fill:none;stroke:url(#SVGID_70_);stroke-miterlimit:10;}
+	.st87{fill:#13AA73;}
+	.st88{fill:#878787;}
+	.st89{fill:#E6E6E6;}
+	.st90{fill:#09C78E;stroke:#E6E6E6;stroke-miterlimit:10;}
+	.st91{fill:#FFCE54;}
+	.st92{fill:none;stroke:#FFCE54;stroke-miterlimit:10;}
+	.st93{fill:none;stroke:#09C78E;stroke-miterlimit:10;}
+	.st94{opacity:0.66;fill:#13AA73;}
+	.st95{opacity:0.58;fill:#2EE8AA;}
+	.st96{fill:#09C78E;stroke:#CCCCCC;stroke-miterlimit:10;}
+	.st97{fill:#0E9964;}
+	.st98{opacity:0.39;fill:#09C78E;}
+	.st99{fill:#1AD697;}
+	.st100{fill:#098E61;}
+	.st101{fill:#FFFFFF;stroke:#CCCCCC;stroke-miterlimit:10;}
+	.st102{fill:#666666;}
+	.st103{opacity:0.22;fill:#09C78E;}
+	.st104{fill:#089A6F;stroke:#089A6F;stroke-miterlimit:10;}
+	.st105{fill:none;stroke:#098E61;stroke-miterlimit:10;}
+	.st106{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st107{fill:url(#SVGID_81_);}
+	.st108{fill:none;stroke:url(#SVGID_82_);stroke-miterlimit:10;}
+	.st109{fill:#45F4B5;}
+	.st110{fill:none;stroke:url(#SVGID_83_);stroke-miterlimit:10;}
+	.st111{fill:url(#SVGID_84_);}
+	.st112{fill:none;stroke:url(#SVGID_85_);stroke-miterlimit:10;}
+	.st113{fill:none;stroke:url(#SVGID_86_);stroke-miterlimit:10;}
+	.st114{fill:url(#SVGID_87_);stroke:#70E0F9;stroke-miterlimit:10;}
+	.st115{fill:url(#SVGID_88_);stroke:#70E0F9;stroke-miterlimit:10;}
+	.st116{fill:#288A8C;}
+	.st117{opacity:0.1;fill:#288A8C;}
+	.st118{opacity:8.000000e-02;fill:#288A8C;}
+	.st119{opacity:0.85;fill:#288A8C;}
+	.st120{opacity:0.69;fill:#FFFFFF;}
+	.st121{fill:none;stroke:#24E2A3;stroke-width:2;stroke-miterlimit:10;}
+	.st122{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;}
+	.st123{fill:none;stroke:#24E2A3;stroke-width:4;stroke-miterlimit:10;}
+	.st124{fill:#12100C;}
+	.st125{fill:url(#SVGID_97_);stroke:#70E0F9;stroke-miterlimit:10;}
+	.st126{fill:url(#SVGID_100_);stroke:#70E0F9;stroke-miterlimit:10;}
+	.st127{fill:none;stroke:#4D4D4D;stroke-miterlimit:10;}
+	.st128{opacity:0.5;}
+	.st129{fill:none;stroke:#70E0F9;stroke-miterlimit:10;}
+	.st130{fill:#52DCEF;}
+	.st131{opacity:0.85;fill:#8DEFF7;}
+	.st132{fill:#52DCEF;stroke:#52DCEF;stroke-miterlimit:10;}
+	.st133{opacity:0.2;fill:#52DCEF;}
+	.st134{fill:none;stroke:#45F4B5;stroke-width:2;stroke-miterlimit:10;}
+	.st135{fill:none;stroke:#45F4B5;stroke-width:4;stroke-miterlimit:10;}
+	.st136{opacity:0.35;}
+	.st137{opacity:0.63;fill:#333333;}
+	.st138{opacity:0.21;fill:#333333;}
+	.st139{opacity:0.5;fill:#333333;}
+	.st140{opacity:0.63;}
+	.st141{opacity:0.21;}
+	.st142{opacity:0.66;}
+	.st143{opacity:0.58;}
+	.st144{fill:#2EE8AA;}
+	.st145{fill:#808080;}
+	.st146{filter:url(#Adobe_OpacityMaskFilter_8_);}
+	.st147{mask:url(#SVGID_117_);}
+	.st148{fill:#010C0C;}
+	.st149{filter:url(#Adobe_OpacityMaskFilter_9_);}
+	.st150{mask:url(#SVGID_120_);}
+	.st151{opacity:0.3;fill:#52DCEF;}
+	.st152{opacity:0.1;fill:#52DCEF;}
+	.st153{fill:#70E0F9;}
+	.st154{opacity:0.1;}
+	.st155{fill:#A05B1D;}
+	.st156{opacity:8.000000e-02;}
+	.st157{fill:#93551C;}
+	.st158{opacity:0.85;}
+	.st159{fill:#8DEFF7;}
+	.st160{opacity:0.2;}
+	.st161{opacity:0.3;}
+	.st162{fill:#4D4D4D;}
+	.st163{filter:url(#Adobe_OpacityMaskFilter_10_);}
+	.st164{opacity:0.29;mask:url(#SVGID_137_);}
+	.st165{fill:url(#SVGID_138_);}
+	.st166{fill:url(#SVGID_139_);}
+	.st167{fill:url(#SVGID_140_);}
+	.st168{fill:none;stroke:url(#SVGID_141_);stroke-miterlimit:10;}
+	.st169{filter:url(#Adobe_OpacityMaskFilter_11_);}
+	.st170{opacity:0.29;mask:url(#SVGID_142_);}
+	.st171{fill:url(#SVGID_143_);}
+	.st172{fill:none;stroke:url(#SVGID_144_);stroke-miterlimit:10;}
+	.st173{filter:url(#Adobe_OpacityMaskFilter_12_);}
+	.st174{opacity:0.29;mask:url(#SVGID_145_);}
+	.st175{fill:url(#SVGID_146_);}
+	.st176{fill:none;stroke:url(#SVGID_147_);stroke-miterlimit:10;}
+	.st177{filter:url(#Adobe_OpacityMaskFilter_13_);}
+	.st178{opacity:0.29;mask:url(#SVGID_148_);}
+	.st179{fill:url(#SVGID_149_);}
+	.st180{fill:url(#SVGID_150_);}
+	.st181{fill:url(#SVGID_151_);}
+	.st182{fill:none;stroke:url(#SVGID_152_);stroke-miterlimit:10;}
+	.st183{filter:url(#Adobe_OpacityMaskFilter_14_);}
+	.st184{opacity:0.29;mask:url(#SVGID_153_);}
+	.st185{fill:url(#SVGID_154_);}
+	.st186{fill:none;stroke:url(#SVGID_155_);stroke-miterlimit:10;}
+	.st187{filter:url(#Adobe_OpacityMaskFilter_15_);}
+	.st188{opacity:0.29;mask:url(#SVGID_156_);}
+	.st189{fill:url(#SVGID_157_);}
+	.st190{fill:none;stroke:url(#SVGID_158_);stroke-miterlimit:10;}
+	.st191{fill:#999999;}
+	.st192{filter:url(#Adobe_OpacityMaskFilter_16_);}
+	.st193{opacity:0.29;mask:url(#SVGID_159_);}
+	.st194{fill:url(#SVGID_160_);}
+	.st195{fill:none;stroke:url(#SVGID_161_);stroke-miterlimit:10;}
+	.st196{filter:url(#Adobe_OpacityMaskFilter_17_);}
+	.st197{opacity:0.29;mask:url(#SVGID_162_);}
+	.st198{fill:url(#SVGID_163_);}
+	.st199{fill:none;stroke:url(#SVGID_164_);stroke-miterlimit:10;}
+	.st200{filter:url(#Adobe_OpacityMaskFilter_18_);}
+	.st201{opacity:0.29;mask:url(#SVGID_165_);}
+	.st202{fill:url(#SVGID_166_);}
+	.st203{fill:none;stroke:url(#SVGID_167_);stroke-miterlimit:10;}
+	.st204{filter:url(#Adobe_OpacityMaskFilter_19_);}
+	.st205{opacity:0.29;mask:url(#SVGID_168_);}
+	.st206{fill:url(#SVGID_169_);}
+	.st207{fill:url(#SVGID_170_);}
+	.st208{filter:url(#Adobe_OpacityMaskFilter_20_);}
+	.st209{opacity:0.66;mask:url(#SVGID_171_);}
+	.st210{filter:url(#Adobe_OpacityMaskFilter_21_);}
+	.st211{opacity:0.66;mask:url(#SVGID_174_);}
+	.st212{filter:url(#Adobe_OpacityMaskFilter_22_);}
+	.st213{mask:url(#SVGID_175_);}
+	.st214{filter:url(#Adobe_OpacityMaskFilter_23_);}
+	.st215{mask:url(#SVGID_176_);}
+	.st216{fill:url(#SVGID_177_);}
+	.st217{fill:none;stroke:url(#SVGID_178_);stroke-miterlimit:10;}
+	.st218{filter:url(#Adobe_OpacityMaskFilter_24_);}
+	.st219{opacity:0.29;mask:url(#SVGID_179_);}
+	.st220{fill:url(#SVGID_180_);}
+	.st221{fill:none;stroke:url(#SVGID_181_);stroke-miterlimit:10;}
+	.st222{filter:url(#Adobe_OpacityMaskFilter_25_);}
+	.st223{mask:url(#SVGID_182_);}
+	.st224{filter:url(#Adobe_OpacityMaskFilter_26_);}
+	.st225{opacity:0.29;mask:url(#SVGID_183_);}
+	.st226{fill:#FF9900;}
+	.st227{fill:#221F1F;}
+	.st228{fill:#1A1A1A;}
+	.st229{fill-rule:evenodd;clip-rule:evenodd;fill:#231F20;}
+	.st230{fill:#231F20;}
+	.st231{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st232{filter:url(#Adobe_OpacityMaskFilter_27_);}
+	.st233{opacity:0.4;mask:url(#SVGID_184_);}
+	.st234{filter:url(#Adobe_OpacityMaskFilter_28_);}
+	.st235{opacity:0.4;mask:url(#SVGID_185_);}
+	.st236{filter:url(#Adobe_OpacityMaskFilter_29_);}
+	.st237{opacity:0.4;mask:url(#SVGID_186_);}
+	.st238{fill-rule:evenodd;clip-rule:evenodd;fill:#1A1A1A;}
+	.st239{fill:#7CAD2A;}
+	.st240{fill:#9CCE3A;}
+	.st241{fill:#0ABC80;}
+	.st242{fill:#17CC90;}
+	.st243{clip-path:url(#SVGID_192_);}
+	.st244{fill:#0A0708;}
+	.st245{clip-path:url(#SVGID_198_);}
+	.st246{opacity:0.87;fill:#52DCEF;}
+	.st247{fill:#57B4C9;}
+	.st248{fill:none;stroke:#666666;stroke-miterlimit:10;}
+	.st249{fill:none;stroke:#45F4B5;stroke-miterlimit:10;}
+	.st250{fill:none;stroke:#666666;stroke-width:2;stroke-miterlimit:10;}
+	.st251{fill:none;stroke:#24E2A3;stroke-miterlimit:10;}
+	.st252{opacity:0.51;fill:#52DCEF;}
+	.st253{opacity:0.56;}
+	.st254{fill:none;stroke:#666666;stroke-width:4;stroke-miterlimit:10;}
+	.st255{opacity:0.51;fill:none;stroke:#4D4D4D;stroke-width:6;stroke-miterlimit:10;}
+	.st256{fill:none;stroke:#4D4D4D;stroke-width:4;stroke-miterlimit:10;}
+	.st257{fill:none;stroke:#4D4D4D;stroke-width:6;stroke-miterlimit:10;}
+	.st258{fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;stroke-dasharray:3;}
+	.st259{fill:url(#SVGID_205_);stroke:#FFCE54;stroke-miterlimit:10;}
+	.st260{fill:url(#SVGID_206_);stroke:#70E0F9;stroke-miterlimit:10;}
+	.st261{fill:url(#SVGID_207_);stroke:#70E0F9;stroke-miterlimit:10;}
+	.st262{fill:url(#SVGID_208_);stroke:#70E0F9;stroke-miterlimit:10;}
+	.st263{fill:url(#SVGID_211_);stroke:#70E0F9;stroke-miterlimit:10;}
+	.st264{clip-path:url(#SVGID_217_);}
+	.st265{clip-path:url(#SVGID_227_);}
+	.st266{fill:url(#SVGID_234_);stroke:#70E0F9;stroke-miterlimit:10;}
+	.st267{fill:url(#SVGID_237_);stroke:#70E0F9;stroke-miterlimit:10;}
+	.st268{fill:url(#SVGID_240_);}
+	.st269{fill:none;stroke:url(#SVGID_241_);stroke-miterlimit:10;}
+	.st270{fill:url(#SVGID_244_);stroke:#70E0F9;stroke-miterlimit:10;}
+	.st271{fill:url(#SVGID_245_);stroke:#70E0F9;stroke-miterlimit:10;}
+	.st272{fill:url(#SVGID_256_);}
+	.st273{opacity:0.9;fill:#333333;}
+	.st274{opacity:0.51;}
+	.st275{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;stroke-dasharray:2.9931,2.9931;}
+	.st276{fill:none;stroke:#FFFFFF;stroke-width:4;stroke-miterlimit:10;stroke-dasharray:3.0143,3.0143;}
+	.st277{fill:none;stroke:#CCCCCC;stroke-width:4;stroke-miterlimit:10;}
+	.st278{fill:none;stroke:#CCCCCC;stroke-width:4;stroke-miterlimit:10;stroke-dasharray:3.0181,3.0181;}
+	.st279{fill:none;stroke:#CCCCCC;stroke-width:4;stroke-miterlimit:10;stroke-dasharray:2.9804,2.9804;}
+	.st280{opacity:0.33;}
+	.st281{fill:url(#SVGID_259_);}
+	.st282{fill:url(#SVGID_260_);}
+	.st283{display:none;}
+	.st284{display:inline;}
+	.st285{display:inline;fill:#5B5B5B;}
+	.st286{fill:#CCCCCC;}
+	.st287{filter:url(#Adobe_OpacityMaskFilter_30_);}
+	.st288{opacity:0.45;mask:url(#SVGID_263_);}
+	.st289{fill:#293342;}
+	.st290{filter:url(#Adobe_OpacityMaskFilter_31_);}
+	.st291{opacity:0.45;mask:url(#SVGID_264_);}
+	.st292{fill:none;stroke:#878787;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st293{filter:url(#Adobe_OpacityMaskFilter_32_);}
+	.st294{opacity:0.2;mask:url(#SVGID_265_);}
+	.st295{fill:none;stroke:#F2F2F2;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st296{filter:url(#Adobe_OpacityMaskFilter_33_);}
+	.st297{opacity:0.2;mask:url(#SVGID_266_);}
+	.st298{display:inline;fill:#FFFFFF;}
+	.st299{filter:url(#Adobe_OpacityMaskFilter_34_);}
+	.st300{opacity:0.2;mask:url(#SVGID_267_);}
+	.st301{filter:url(#Adobe_OpacityMaskFilter_35_);}
+	.st302{opacity:0.2;mask:url(#SVGID_268_);}
+	.st303{filter:url(#Adobe_OpacityMaskFilter_36_);}
+	.st304{opacity:0.2;mask:url(#SVGID_269_);}
+	.st305{display:inline;fill:#3C3D3C;}
+	.st306{filter:url(#Adobe_OpacityMaskFilter_37_);}
+	.st307{opacity:0.45;mask:url(#SVGID_272_);}
+	.st308{display:inline;fill:#F2F2F2;}
+	.st309{filter:url(#Adobe_OpacityMaskFilter_38_);}
+	.st310{opacity:0.2;mask:url(#SVGID_273_);}
+	.st311{filter:url(#Adobe_OpacityMaskFilter_39_);}
+	.st312{opacity:0.27;mask:url(#SVGID_274_);}
+	.st313{opacity:0.14;}
+	.st314{filter:url(#Adobe_OpacityMaskFilter_40_);}
+	.st315{opacity:0.27;mask:url(#SVGID_275_);}
+	.st316{fill:none;stroke:#293342;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st317{fill:none;stroke:#F2F2F2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st318{display:inline;fill:#E6E6E6;}
+	.st319{filter:url(#Adobe_OpacityMaskFilter_41_);}
+	.st320{opacity:0.27;mask:url(#SVGID_276_);}
+	.st321{display:inline;fill:#24E2A3;}
+	.st322{display:inline;fill:#089A6F;}
+	.st323{display:inline;fill:none;stroke:#24E2A3;stroke-miterlimit:10;}
+	.st324{display:inline;fill:#F7F7F7;}
+	.st325{display:inline;opacity:0.4;fill:#083323;}
+	.st326{display:inline;fill:#333333;}
+	.st327{fill:url(#SVGID_281_);}
+	.st328{fill:none;stroke:url(#SVGID_282_);stroke-miterlimit:10;}
+	.st329{filter:url(#Adobe_OpacityMaskFilter_42_);}
+	.st330{mask:url(#SVGID_283_);}
+	.st331{filter:url(#Adobe_OpacityMaskFilter_43_);}
+	.st332{opacity:0.29;mask:url(#SVGID_284_);}
+	.st333{display:inline;opacity:0.87;fill:url(#SVGID_285_);}
+	.st334{display:inline;opacity:0.87;fill:url(#SVGID_286_);}
+	.st335{display:inline;fill:#4D4D4D;}
+	.st336{display:inline;fill:none;stroke:#FFFFFF;stroke-width:3;stroke-miterlimit:10;stroke-dasharray:3;}
+	.st337{display:inline;opacity:0.87;fill:#52DCEF;}
+	.st338{display:inline;opacity:0.69;fill:#FFFFFF;}
+	.st339{display:inline;fill:none;stroke:#ED1E79;stroke-width:4;stroke-miterlimit:10;}
+	.st340{display:inline;fill:#ED1E79;}
+	.st341{display:inline;fill:#FF00FF;stroke:#FF00FF;stroke-width:2;stroke-miterlimit:10;}
+	.st342{display:inline;fill:#FF00FF;}
+	.st343{display:inline;fill:none;stroke:#47C1E2;stroke-width:4;stroke-miterlimit:10;}
+	.st344{display:inline;fill:#47C1E2;}
+	.st345{fill:none;stroke:#09C78E;stroke-width:4;stroke-miterlimit:10;}
+	.st346{display:inline;fill:none;stroke:#FF00FF;stroke-width:2;stroke-miterlimit:10;}
+	.st347{display:inline;opacity:0.82;fill:#F7F9F8;}
+	.st348{display:inline;opacity:0.8;fill:#878787;}
+	.st349{display:inline;fill:#FF00FF;stroke:#47C1E2;stroke-width:2;stroke-miterlimit:10;}
+	.st350{display:inline;opacity:0.39;fill:#FFFFFF;}
+	.st351{fill:none;stroke:#52DCEF;stroke-miterlimit:10;}
+	.st352{fill:url(#SVGID_293_);}
+	.st353{fill:none;stroke:url(#SVGID_294_);stroke-miterlimit:10;}
+	.st354{filter:url(#Adobe_OpacityMaskFilter_44_);}
+	.st355{opacity:0.29;mask:url(#SVGID_295_);}
+	.st356{fill:url(#SVGID_296_);}
+	.st357{fill:none;stroke:url(#SVGID_297_);stroke-miterlimit:10;}
+	.st358{filter:url(#Adobe_OpacityMaskFilter_45_);}
+	.st359{opacity:0.29;mask:url(#SVGID_298_);}
+	.st360{fill:url(#SVGID_299_);}
+	.st361{fill:none;stroke:url(#SVGID_300_);stroke-miterlimit:10;}
+	.st362{filter:url(#Adobe_OpacityMaskFilter_46_);}
+	.st363{opacity:0.29;mask:url(#SVGID_301_);}
+	.st364{fill:url(#SVGID_302_);}
+	.st365{fill:url(#SVGID_303_);}
+	.st366{display:inline;fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st367{display:inline;fill:#09C78E;}
+	.st368{display:inline;fill:#FFFFFF;stroke:#45F4B5;stroke-miterlimit:10;}
+	.st369{display:inline;fill:#089A6F;stroke:#089A6F;stroke-miterlimit:10;}
+	.st370{display:inline;fill:#FFFFFF;stroke:#09C78E;stroke-miterlimit:10;}
+	.st371{fill:#3D3D3D;}
+	.st372{fill:none;stroke:#089A6F;stroke-width:2;stroke-miterlimit:10;}
+	.st373{fill:#3E5566;stroke:#0E9964;stroke-width:0.5;stroke-miterlimit:10;}
+	.st374{fill:#3E5566;stroke:#45F4B5;stroke-width:0.5;stroke-miterlimit:10;}
+	.st375{opacity:0.9;fill:#212224;}
+	.st376{fill:#CCCCCC;stroke:#666666;stroke-miterlimit:10;}
+	.st377{fill:#CCCCCC;stroke:#CCCCCC;stroke-miterlimit:10;}
+	.st378{opacity:0.56;fill:url(#SVGID_332_);}
+	.st379{opacity:0.56;fill:url(#SVGID_333_);}
+	.st380{opacity:0.56;fill:url(#SVGID_334_);}
+	.st381{fill:none;stroke:#00FFFF;stroke-miterlimit:10;}
+	.st382{display:inline;fill:none;stroke:#ED1C24;stroke-miterlimit:10;}
+	.st383{display:inline;fill:none;stroke:#FF0000;stroke-miterlimit:10;}
+	.st384{display:inline;opacity:0.15;fill:#FF0000;stroke:#F2F2F2;stroke-miterlimit:10;}
+	.st385{fill:none;stroke:#FF0000;stroke-miterlimit:10;}
+</style>
+<g id="bg">
+</g>
+<g id="ellements">
+</g>
+<g id="text">
+</g>
+<g id="banner-a">
+</g>
+<g id="banner-b">
+</g>
+<g id="new_CTA_btns">
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="50" y1="-1767.9983" x2="50" y2="-1800.899" gradientTransform="matrix(1 0 0 -1 0 -1767.4487)">
+		<stop  offset="0" style="stop-color:#A3CC39"/>
+		<stop  offset="0.698" style="stop-color:#85BD40"/>
+		<stop  offset="1" style="stop-color:#65AD45"/>
+	</linearGradient>
+	<path style="fill:url(#SVGID_2_);" d="M99.9,10.8h-7.9v13.3c0,0.6-0.2,1.1-0.6,1.5c-0.4,0.4-0.9,0.6-1.5,0.6h-4.6
+		c-0.6,0-1.2-0.2-1.5-0.6c-0.4-0.4-0.6-0.9-0.6-1.5V10.8h-7.9v14c0,1.8,0.4,3.5,1.2,4.8c0.8,1.3,1.8,2.3,3.1,2.9c1.4,0.6,3,1,4.8,1
+		H92c0,0,2.1,0,4.3-1.2c1.2-0.7,2.1-1.8,2.7-3.1c0.6-1.3,1-2.8,1-4.5L99.9,10.8z M20.4,11.6c-1.4-0.6-2.9-0.9-4.6-0.8h-5.1l-2,0.2
+		C8.2,11.2,8,11.3,8,11.3V0.5H0.1v32.9H8V20.1c0-0.6,0.2-1.1,0.6-1.5c0.4-0.4,0.9-0.6,1.5-0.6h4.6c0.6,0,1.1,0.2,1.5,0.6
+		c0.4,0.4,0.6,0.9,0.6,1.5v13.3h7.9V19.1c0-2-0.4-3.6-1.2-4.9C22.8,13.1,21.7,12.2,20.4,11.6z M47.3,24.1c0,0.6-0.2,1.1-0.6,1.5
+		c-0.4,0.4-0.9,0.6-1.5,0.6h-4.6c-0.6,0-1.1-0.2-1.5-0.6c-0.4-0.4-0.6-0.9-0.6-1.5V10.8h-7.9v14c0,1.8,0.4,3.5,1.1,4.8
+		c0.7,1.3,1.8,2.3,3.1,2.9c1.4,0.6,2.9,1,4.8,1h7.8c0,0,2.1,0.2,4.3-1.2c1.2-0.7,2.1-1.8,2.7-3.1c0.6-1.3,0.9-2.8,1-4.5v-14h-7.9
+		L47.3,24.1L47.3,24.1z M61.2,33.4h7.9V0.5h-7.9V33.4z"/>
+</g>
+<g id="no_image" class="st283">
+</g>
+<g id="HOVER__x2F__MENU" class="st283">
+</g>
+<g id="NOTES" class="st283">
+</g>
+<g id="popup-BG" class="st283">
+</g>
+<g id="popup1" class="st283">
+</g>
+<g id="hover1" class="st283">
+</g>
+<g id="popup2" class="st283">
+</g>
+<g id="popup2_copy" class="st283">
+</g>
+<g id="popup2_copy_2" class="st283">
+</g>
+<g id="popup2_copy_3" class="st283">
+</g>
+<g id="search">
+</g>
+<g id="grid" class="st283">
+</g>
+</svg>
