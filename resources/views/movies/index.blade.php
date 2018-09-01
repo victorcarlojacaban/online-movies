@@ -86,7 +86,7 @@
 			<center>
 				@if(count($movies))
 				<div id="remove-row" style="color:black">
-                    <button id="btn-more" data-id="1" data-genre="{{ $genreData }}" data-type="{{ $movieType }}" class="button">Load More Movies</button>
+                    <button id="btn-more" data-id="1" data-genre="{{ $genreData }}" data-type="{{ $movieType }}" class="button-load">Load More Movies</button>
                 </div>
                 @else
                 	<div id="remove-row" style="color:white">

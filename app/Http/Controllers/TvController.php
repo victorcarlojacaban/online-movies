@@ -86,7 +86,7 @@ class TvController extends Controller
             }
 
             $output .= '<center><div id="remove-row" style="color:black">
-                        <button id="btn-more" data-id="'. ($id + 1).'" class="button"> Load More TV Shows </button>
+                        <button id="btn-more" data-id="'. ($id + 1).'" class="button-load"> Load More TV Shows </button>
                     </div></center><br/>';
             
             echo $output;
@@ -105,6 +105,8 @@ class TvController extends Controller
 
         $crews = Tmdb::getTvApi()->getCredits($id)['crew'];
 
+        $video =  Tmdb::getTvApi()->getVideos($id)['results'][0]['key'] ?? null;
+
         $directors = [];
         $writers = [];
 
@@ -118,6 +120,6 @@ class TvController extends Controller
             } 
         }
 
-        return view('tvshows.show', compact('movie', 'similarMovies', 'directors', 'writers', 'casts'));
+        return view('tvshows.show', compact('movie', 'similarMovies', 'directors', 'writers', 'casts', 'video'));
     }
  }

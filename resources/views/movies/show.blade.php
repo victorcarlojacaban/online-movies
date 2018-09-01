@@ -145,26 +145,27 @@ Writer:
 </div>
 </div>
 <div class="tabs mobile">
-<!-- <div class="tabs__controls">
-<div class="tabs__toggle tabs__toggle_active">
-Synopsis
+<div class="tabs__controls">
+<div class="tabs__toggle custom_toggle" id="overviewToggle">
+<a style="color:white" onclick="toggle('overview', 'overviewToggle')">Synopsis</a>
 </div>
-<div class="tabs__toggle">
-Starring
+<div class="tabs__toggle custom_toggle" id="starringToggle">
+<a style="color:white" onclick="toggle('starring', 'starringToggle')">Starring</a>
 </div>
-<div class="tabs__toggle">
-More Like
+<div class="tabs__toggle custom_toggle" id="moreToggle">
+<a style="color:white" onclick="toggle('more', 'moreToggle')">More Like</a>
 </div>
-</div> -->
-<div class="tabs__toggle tabs__toggle_active">
-Synopsis
+<!-- <div class="tabs__toggle custom_toggle" id="trailerToggle">
+<a style="color:white" onclick="toggle('trailer', 'trailerToggle')">Trailer</a>
 </div>
-<div class="tabs__tab tabs__tab__active">
+ -->
+<div class="tabs__toggle custom_toggle" id="trailerToggle">
+<a style="color:white" onclick="toggle('trailer', 'trailerToggle')">Trailer</a>
+</div>
+</div>
+<div class="tabs__tab tabs__tab__active custom_tab" id="overview">
 <div class="wo_synopsis">{{ $movie['overview'] }}</div>
 <br/>
-<!-- <div class="tabs__toggle tabs__toggle_active">
-Starring
-</div> -->
 
 <div class="wo_section__content wo_section--video-main-left">
 <ul class="wo_video-details">
@@ -220,8 +221,7 @@ Free Trial
 <div class="button wo_btn--play">
 Free Trial
 </div>
-</a><span class="js-cta-buttons-toggle cta-buttons-toggle">
-<span class="cta-buttons-toggle-open cta-buttons-toggle-btn">
+</a><span class="js-cta-buttons-toggle cta-buttons-toggle" style="color:#9a9a9a">
 Show More
 </span>
 <span class="cta-buttons-toggle-close cta-buttons-toggle-btn">
@@ -229,6 +229,145 @@ Hide
 </span>
 </span>
 </div>
+
+<div class="disclaimer-best-streaming">
+<div class="disclaimer-best-streaming__row">
+Based on our viewers’ overall rating for each service.
+</div>
+<div class="disclaimer-best-streaming__row">
+Not all titles featured are available in each service.
+</div>
+</div>
+
+</div>
+<!-- <li class="wo_video-details__item">
+<span class="wo_video-details__name">
+Rated:
+</span>
+<span class="wo_video-details__value">
+PG-13, PG,12,M,k12,G
+</span>
+</li> -->
+<li class="wo_video-details__item">
+<span class="wo_video-details__name">
+Director:
+</span>
+<span class="wo_video-detailstails__value">
+	@foreach($directors as $director)
+		{{ $director }},
+	@endforeach
+</span>
+</li>
+<li class="wo_video-details__item">
+<span class="wo_video-details__name">
+Writer:
+</span>
+<span class="wo_video-details__value">
+	@foreach($writers as $writer)
+		{{ $writer }},
+	@endforeach
+</span>
+</li>
+</ul>
+
+</div>
+</div>
+<!-- end overview -->
+
+<div class="tabs__tab custom_tab" style="margin-top: -20px;" id="starring">
+	<div class="wo_section wo_section--video-details rf_no-margin--bottom">
+		<h3 class="wo_section__title wo_js_collapse-toggle wo_collapse__toggle wo_collapse--opened rf_text-uppercase">
+		<ul class="wo_video-details">
+		<li class="wo_video-details__item">
+		<div class="actor_posters">
+		<div class="actor_posters__slider owl-loaded owl-drag">
+
+		<div class="owl-stage-outer">
+			<div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2440px;">
+				<div class="wo_section wo_section--recomended-videos wo_section--video-details rf_no-margin--bottom">
+		<h3 class="wo_section__title wo_collapse__toggle wo_collapse--opened rf_text-uppercase">
+		<div class="wo_video-thumbs">
+
+		@foreach ($casts as $cast)
+		<?php 
+				$castImage = !empty($cast['profile_path']) ? "https://image.tmdb.org/t/p/w154".$cast['profile_path'] : '/img/no-profile.png';
+			?>
+
+		<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/movies/twilight-2008-107837">
+		<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $castImage  }})""></div>
+		<div class="wo_video-thumb__title">
+			{{ $cast['name'] }}
+		</div>
+		</a>
+		@endforeach
+
+		</div>
+		</div>
+
+
+			</div>
+		</div>
+		</div>
+		</div>
+		</li>
+		
+<div class="wo_section__content wo_section--video-main-right rf_visible-xs" style="margin-top: -20px;">
+<div class="cta-buttons cta-buttons-static">
+<div class="cta-button-title">
+Best Streaming Services
+</div>
+<a class="cta-button track_event_with_conversion watch-now amazon_prime clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now hbo clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now showtimesub clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now starzsub not_visible btn-more  clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now acorn not_visible btn-more  clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more  clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now masterpiece not_visible btn-more  clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now cbs not_visible btn-more  clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now fubo not_visible btn-more  clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a>
+<span class="js-cta-buttons-toggle cta-buttons-toggle" style="color:#9a9a9a">
+Show More
+<!-- <span class="cta-buttons-toggle-open cta-buttons-toggle-btn">
+Show More
+</span> -->
+<span class="cta-buttons-toggle-close cta-buttons-toggle-btn">
+Hide
+</span>
+</span>
+</div>
+
 
 <div class="disclaimer-best-streaming">
 <div class="disclaimer-best-streaming__row">
@@ -268,60 +407,34 @@ Writer:
 	@endforeach
 </span>
 </li>
-</ul>
 
-</div>
-</div>
-
-<div class="tabs__toggle tabs__toggle_active">
-Cast
-</div>
-<div class="tabs__tab tabs__tab__active" style="margin-top: -30px;">
-	<div class="wo_section wo_section--video-details rf_no-margin--bottom">
-		<h3 class="wo_section__title wo_js_collapse-toggle wo_collapse__toggle wo_collapse--opened rf_text-uppercase">
-		<ul class="wo_video-details">
-		<li class="wo_video-details__item">
-		<div class="actor_posters">
-		<div class="actor_posters__slider owl-loaded owl-drag">
-
-		<div class="owl-stage-outer">
-			<div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2440px;">
-				<div class="wo_section wo_section--recomended-videos wo_section--video-details rf_no-margin--bottom">
-		<h3 class="wo_section__title wo_collapse__toggle wo_collapse--opened rf_text-uppercase">
-		<div class="wo_video-thumbs">
-
-		@foreach ($casts as $cast)
-		<?php 
-				$castImage = !empty($cast['profile_path']) ? "https://image.tmdb.org/t/p/w154".$cast['profile_path'] : '/img/no-profile.png';
-			?>
-
-		<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="#">
-		<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $castImage  }})""></div>
-		<div class="wo_video-thumb__title">
-			{{ $cast['name'] }}
-		</div>
-		</a>
-		@endforeach
-
-		</div>
-		</div>
-
-
-			</div>
-		</div>
-		</div>
-		</div>
-		</li>
 		</ul>
 
 		</h3>
 	</div>
 </div>
+<!-- end of starring -->
 
-<div class="tabs__toggle tabs__toggle_active" style="margin-top: -30px;">
-More Like
+<div class="tabs__tab custom_tab" id="trailer">
+<div class="wo_section wo_section--trailers">
+<div class="wo_section__content">
+<ul class="">
+<li class="clip" itemprop="trailer">
+<div class="info">
+<span class="title" itemprop="name">{{ $movie['title'] }}</span>
 </div>
-<div class="tabs__tab tabs__tab__active" style="margin-top: -30px;">
+<!-- <video class="video-trailer" controls="" data-event-category="Trailer" data-event-label="After Porn Ends 2" data-event-name="Click" height="100%" width="100%">
+<source src="//www.youtube.com/embed//{{ $video }}?rel=0&ampc;type=.mp4" type="video/mp4">
+</video> -->
+ <iframe class="embed-responsive-item" src="//www.youtube.com/embed//{{ $video }}?rel=0" width="100%" height="315" frameborder="0" allowfullscreen=""></iframe>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div class="tabs__tab custom_tab" style="margin-top: -15px;" id="more">
 	<div class="wo_section wo_section--video-details rf_no-margin--bottom">
 		<h3 class="wo_section__title wo_js_collapse-toggle wo_collapse__toggle wo_collapse--opened rf_text-uppercase">
 		<ul class="wo_video-details">
@@ -340,7 +453,7 @@ More Like
 				$posterImageSimilar = !empty($similarMovie['poster_path']) ? "https://image.tmdb.org/t/p/w154".$similarMovie['poster_path'] : '/no-poster.jpg';
 			?>
 
-		<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="">
+		<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="#">
 		<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $posterImageSimilar  }})"></div>
 		<div class="wo_video-thumb__title">
 		{{ $similarMovie['title'] }}
@@ -368,11 +481,107 @@ More Like
 		</div>
 		</div>
 		</li>
+	
+<div class="wo_section__content wo_section--video-main-right rf_visible-xs" style="margin-top: -20px;">
+<div class="cta-buttons cta-buttons-static">
+<div class="cta-button-title">
+Best Streaming Services
+</div>
+<a class="cta-button track_event_with_conversion watch-now amazon_prime clickout"><div class="label"></div>
+<div class="button wo_btn--play" style="font-size: 13px">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now hbo   clickout"><div class="label"></div>
+<div class="button wo_btn--play" style="font-size: 13px">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now showtimesub clickout"><div class="label"></div>
+<div class="button wo_btn--play" style="font-size: 13px">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now starzsub not_visible btn-more  clickout"><div class="label"></div>
+<div class="button wo_btn--play" style="font-size: 13px">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now acorn not_visible btn-more  clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more  clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now masterpiece not_visible btn-more  clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now cbs not_visible btn-more  clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a><a class="cta-button track_event_with_conversion watch-now fubo not_visible btn-more  clickout"><div class="label"></div>
+<div class="button wo_btn--play">
+Free Trial
+</div>
+</a><span class="js-cta-buttons-toggle cta-buttons-toggle" style="color:#9a9a9a">
+Show More
+</span>
+<span class="cta-buttons-toggle-close cta-buttons-toggle-btn">
+Hide
+</span>
+</span>
+</div>
+
+<!-- <div class="disclaimer-best-streaming">
+<div class="disclaimer-best-streaming__row">
+Based on our viewers’ overall rating for each service.
+</div>
+<div class="disclaimer-best-streaming__row">
+Not all titles featured are available in each service.
+</div>
+</div> -->
+
+</div>
+<li class="wo_video-details__item">
+<!-- <span class="wo_video-details__name">
+Rated:
+</span>
+<span class="wo_video-details__value">
+-12,SAM 16,18
+</span> -->
+</li>
+<li class="wo_video-details__item">
+<span class="wo_video-details__name">
+Director:
+</span>
+<span class="wo_video-detailstails__value">
+	@foreach($directors as $director)
+		{{ $director }},
+	@endforeach
+</span>
+</li>
+<li class="wo_video-details__item">
+<span class="wo_video-details__name">
+Writer:
+</span>
+<span class="wo_video-details__value">
+	@foreach($writers as $writer)
+		{{ $writer }},
+	@endforeach
+</span>
+</li>
+
 		</ul>
 
 		</h3>
 	</div>
 </div>
+
+<!-- end of more like -->
 
 <div class="tabs__tab">
 <div class="wo_section wo_section--recomended-videos wo_section--video-details rf_no-margin--bottom">
@@ -384,7 +593,7 @@ More Like
 <div class="cta-button-title">
 Best Streaming Services
 </div>
-<a class="cta-button track_event_with_conversion watch-now amazon_prime   clickout"><div class="label"></div>
+<a class="cta-button track_event_with_conversion watch-now amazon_prime clickout"><div class="label"></div>
 <div class="button wo_btn--play">
 Free Trial
 </div>
@@ -552,7 +761,7 @@ Writer:
 </li>
 </ul>
 
-<ul class="wo_streaming-sites-buttons" style="margin-top: -50px;">
+<ul class="wo_streaming-sites-buttons">
 <li class="wo_streaming-sites-buttons__select-box">
 <span class="wo_streaming-sites-buttons__select-row">
 <label for="availability">Type</label>
@@ -786,8 +995,8 @@ Free Trial
 <div class="button wo_btn--play">
 Free Trial
 </div>
-</a><span class="js-cta-buttons-toggle cta-buttons-toggle">
-<span class="cta-buttons-toggle-open cta-buttons-toggle-btn">
+</a>
+<span class="js-cta-buttons-toggle cta-buttons-toggle" style="color:#9a9a9a">
 Show More
 </span>
 <span class="cta-buttons-toggle-close cta-buttons-toggle-btn">
@@ -929,4 +1138,38 @@ IMDb
 
 
 </div>
+<script type="text/javascript">
+
+	$('#overviewToggle').addClass('tabs__toggle_active');
+	let divs = document.getElementsByClassName('custom_tab');
+	let divsToggle = document.getElementsByClassName('custom_toggle');
+
+	function toggle(id, toggleId) {
+
+		$('#overviewToggle').removeClass('tabs__toggle_active');
+	    for (let i = 0; i < divs.length; i++) {
+	      let div = divs[i];
+	      if (div.id == id) {
+	        div.style.display = 'block';
+	       }
+	      else
+	      {
+	        div.style.display = 'none';
+	    	}
+	    }
+
+	    for (let i = 0; i < divsToggle.length; i++) {
+	      let div = divsToggle[i];
+	     
+	      if (div.id == toggleId) {
+	      // 	 console.log(toggleId);
+	      // console.log(div.id);
+	        $(this).addClass('tabs__toggle_active');
+	       }
+	      else {
+	        $(this).removeClass('tabs__toggle_active');
+	       }
+	    }
+	}
+</script>
 @endsection

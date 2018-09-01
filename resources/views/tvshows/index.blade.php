@@ -81,7 +81,7 @@
 			<center>
 				@if ($tvshows)
 				<div id="remove-row" style="color:black">
-                    <button id="btn-more" data-id="1" class="button">Load More TV Shows</button>
+                    <button id="btn-more" data-id="1" class="button-load">Load More TV Shows</button>
                 </div>
                 @endif
         	</center>

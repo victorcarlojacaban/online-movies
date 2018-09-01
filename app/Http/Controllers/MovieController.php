@@ -132,13 +132,19 @@ class MovieController extends Controller
             }
 
             $output .= '<center><div id="remove-row" style="color:black">
-                        <button id="btn-more" data-id="'. ($id + 1).'" data-genre="'. $genreData.'" data-type="'. $movieType.'" class="button"> Load More Movies </button>
+                        <button id="btn-more" data-id="'. ($id + 1).'" data-genre="'. $genreData.'" data-type="'. $movieType.'" class="button-load"> Load More Movies </button>
                     </div></center><br/>';
             
             echo $output;
         }
     }
 
+    /**
+     * Show Specific Data for Movie
+     * @param  int $id id of movie
+     * 
+     * @return Resource
+     */
     public function show($id)
     {
         $movie = Tmdb::getMoviesApi()->getMovie($id);
@@ -149,9 +155,7 @@ class MovieController extends Controller
 
         $crews = Tmdb::getMoviesApi()->getCredits($id)['crew'];
 
-        // $rate = Tmdb::getMoviesApi()->getRates($id);
-
-        // dd(var_dump($rate));
+        $video =  Tmdb::getMoviesApi()->getVideos($id)['results'][0]['key'] ?? null;
 
         $directors = [];
         $writers = [];
@@ -166,9 +170,7 @@ class MovieController extends Controller
             } 
         }
 
-        // dd(var_dump($crew));
-
-        return view('movies.show', compact('movie', 'similarMovies', 'directors', 'writers', 'casts'));
+        return view('movies.show', compact('movie', 'similarMovies', 'directors', 'writers', 'casts', 'video'));
 
     }
  }
