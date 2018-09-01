@@ -145,30 +145,27 @@ Writer:
 </div>
 </div>
 <div class="tabs mobile">
-<div class="tabs__controls">
+<!-- <div class="tabs__controls">
 <div class="tabs__toggle tabs__toggle_active">
 Synopsis
 </div>
 <div class="tabs__toggle">
-<!-- Starring -->
+Starring
 </div>
 <div class="tabs__toggle">
-<!-- More Like -->
+More Like
 </div>
+</div> -->
+<div class="tabs__toggle tabs__toggle_active">
+Synopsis
 </div>
 <div class="tabs__tab tabs__tab__active">
 <div class="wo_synopsis">{{ $movie['overview'] }}</div>
 <br/>
-<div class="tabs__toggle tabs__toggle_active">
+<!-- <div class="tabs__toggle tabs__toggle_active">
 Starring
-</div>
-<div class="wo_synopsis">
-	<ul class="wo_video-details">
-@foreach ($casts as $cast)
-		<li>{{ $cast['name'] }}</li>
-	@endforeach
-</ul>
-</div>
+</div> -->
+
 <div class="wo_section__content wo_section--video-main-left">
 <ul class="wo_video-details">
 <li class="wo_video-details__item wo_video-details__tile-items">
@@ -275,95 +272,106 @@ Writer:
 
 </div>
 </div>
-<div class="tabs__tab">
-<div class="wo_section wo_section--video-details rf_no-margin--bottom">
-<h3 class="wo_section__title wo_js_collapse-toggle wo_collapse__toggle wo_collapse--opened rf_text-uppercase">
-<ul class="wo_video-details">
-<li class="wo_video-details__item">
-<div class="actor_posters">
-<div class="actor_posters__slider owl-loaded owl-drag">
 
-<div class="owl-stage-outer">
-	<div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2440px;">
+<div class="tabs__toggle tabs__toggle_active">
+Cast
+</div>
+<div class="tabs__tab tabs__tab__active" style="margin-top: -30px;">
+	<div class="wo_section wo_section--video-details rf_no-margin--bottom">
+		<h3 class="wo_section__title wo_js_collapse-toggle wo_collapse__toggle wo_collapse--opened rf_text-uppercase">
+		<ul class="wo_video-details">
+		<li class="wo_video-details__item">
+		<div class="actor_posters">
+		<div class="actor_posters__slider owl-loaded owl-drag">
+
+		<div class="owl-stage-outer">
+			<div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2440px;">
+				<div class="wo_section wo_section--recomended-videos wo_section--video-details rf_no-margin--bottom">
+		<h3 class="wo_section__title wo_collapse__toggle wo_collapse--opened rf_text-uppercase">
+		<div class="wo_video-thumbs">
+
 		@foreach ($casts as $cast)
-			<?php 
+		<?php 
 				$castImage = !empty($cast['profile_path']) ? "https://image.tmdb.org/t/p/w154".$cast['profile_path'] : '/no-profile.png';
 			?>
-			<div class="owl-item active" style="width: 112px; margin-right: 10px;">
-				<div class="actor_posters__block" itemprop="actor" itemscope="itemscope" itemtype="http://schema.org/Person">
 
-			<div class="actor_posters__poster" style="background-image: url({{ $castImage  }})"></div>
-
-				<span itemprop="name">{{ $cast['name'] }}</span>
-			</div>
+		<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/movies/twilight-2008-107837">
+		<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $castImage  }})""></div>
+		<div class="wo_video-thumb__title">
+			{{ $cast['name'] }}
 		</div>
+		</a>
 		@endforeach
 
+		</div>
+		</div>
+
+
+			</div>
+		</div>
+		</div>
+		</div>
+		</li>
+		</ul>
+
+		</h3>
 	</div>
 </div>
-</div>
-</div>
-</li>
-</ul>
 
-</h3>
+<div class="tabs__toggle tabs__toggle_active">
+More Like
 </div>
-<div class="wo_section__content wo_section--video-main-right">
-<div class="cta-buttons cta-buttons-static">
-<div class="cta-button-title">
-Best Streaming Services
-</div>
-<a class="cta-button track_event_with_conversion watch-now amazon_prime clickout"><div class="label"></div>
-<div class="button wo_btn--play">
-Free Trial
-</div>
-</a><a class="cta-button track_event_with_conversion watch-now hbo  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
-Free Trial
-</div>
-</a><a class="cta-button track_event_with_conversion watch-now showtimesub   clickout"><div class="label"></div>
-<div class="button wo_btn--play">
-Free Trial
-</div>
-</a><a class="cta-button track_event_with_conversion watch-now starzsub not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
-Free Trial
-</div>
-</a><a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
-Free Trial
-</div>
-</a><a class="cta-button track_event_with_conversion watch-now acorn not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
-Free Trial
-</div>
-</a><a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
-Free Trial
-</div>
-</a><a class="cta-button track_event_with_conversion watch-now masterpiece not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
-Free Trial
-</div>
-</a><a class="cta-button track_event_with_conversion watch-now cbs not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
-Free Trial
-</div>
-</a><a class="cta-button track_event_with_conversion watch-now fubo not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
-Free Trial
-</div>
-</a><span class="js-cta-buttons-toggle cta-buttons-toggle">
-<span class="cta-buttons-toggle-open cta-buttons-toggle-btn">
-Show More
-</span>
-<span class="cta-buttons-toggle-close cta-buttons-toggle-btn">
-Hide
-</span>
-</span>
-</div>
+<div class="tabs__tab tabs__tab__active" style="margin-top: -30px;">
+	<div class="wo_section wo_section--video-details rf_no-margin--bottom">
+		<h3 class="wo_section__title wo_js_collapse-toggle wo_collapse__toggle wo_collapse--opened rf_text-uppercase">
+		<ul class="wo_video-details">
+		<li class="wo_video-details__item">
+		<div class="actor_posters">
+		<div class="actor_posters__slider owl-loaded owl-drag">
 
-</div>
+		<div class="owl-stage-outer">
+			<div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2440px;">
+				<div class="wo_section wo_section--recomended-videos wo_section--video-details rf_no-margin--bottom">
+		<h3 class="wo_section__title wo_collapse__toggle wo_collapse--opened rf_text-uppercase">
+		<div class="wo_video-thumbs">
+
+		@foreach($similarMovies as $similarMovie)
+			<?php 
+				$posterImageSimilar = !empty($similarMovie['poster_path']) ? "https://image.tmdb.org/t/p/w154".$similarMovie['poster_path'] : '/no-poster.jpg';
+			?>
+
+		<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/movies/twilight-2008-107837">
+		<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $posterImageSimilar  }})"></div>
+		<div class="wo_video-thumb__title">
+		{{ $similarMovie['title'] }}
+		</div>
+		<div class="wo_video-thumb__additional">
+		<div class="wo_video-thumb__year">
+		{{ date("Y",strtotime($similarMovie['release_date'])) }}
+		</div>
+		<div class="wo_video-thumb__rating">
+		<span>
+			<span style="color:#fdc228">☆</span>
+		{{ $similarMovie['vote_average'] }}
+		</span>
+		</div>
+		</div>
+		</a>
+		@endforeach
+
+		</div>
+		</div>
+
+
+			</div>
+		</div>
+		</div>
+		</div>
+		</li>
+		</ul>
+
+		</h3>
+	</div>
 </div>
 
 <div class="tabs__tab">
