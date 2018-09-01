@@ -292,7 +292,7 @@ Cast
 
     @foreach ($casts as $cast)
     <?php 
-        $castImage = !empty($cast['profile_path']) ? "https://image.tmdb.org/t/p/w154".$cast['profile_path'] : '/no-profile.png';
+        $castImage = !empty($cast['profile_path']) ? "https://image.tmdb.org/t/p/w154".$cast['profile_path'] : '/img/no-profile.png';
       ?>
 
     <a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/movies/twilight-2008-107837">
@@ -834,7 +834,7 @@ Starring
   <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2440px;">
     @foreach ($casts as $cast)
       <?php 
-        $castImage = !empty($cast['profile_path']) ? "https://image.tmdb.org/t/p/w154".$cast['profile_path'] : '/no-profile.png';
+        $castImage = !empty($cast['profile_path']) ? "https://image.tmdb.org/t/p/w154".$cast['profile_path'] : '/img/no-profile.png';
       ?>
       <div class="owl-item active" style="width: 112px; margin-right: 10px;">
         <div class="actor_posters__block" itemprop="actor" itemscope="itemscope" itemtype="http://schema.org/Person">
