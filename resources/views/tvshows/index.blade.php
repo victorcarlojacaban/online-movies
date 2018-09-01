@@ -51,14 +51,16 @@
 				<?php 
 					
 					$posterImage = !empty($movie['poster_path']) ? "https://image.tmdb.org/t/p/w154".$movie['poster_path'] : '/no-poster.jpg';
+
+					$tvId = $movie['id'];
 				?>
 
 				<div class="wo_movie-item__link">
 					<div class="wo_movie-item__poster">
-						<div class="wo_movie-item__poster" style="background-image: url(&quot; {{ $posterImage }} &quot;);">
+						<div class="wo_movie-item__poster" onclick="window.location.href='/tvshows/show/{{ $tvId }}'" style="background-image: url(&quot; {{ $posterImage }} &quot;);">
 			
 						</div>
-						<div class="wo_movie-item__details"><a href="#" data-event-name="See details click" data-event-label="Fifty Shades Darker" data-event-category="List Page" class="wo_movie-item__wrap track_event"><div class="wo_movie-item__title">{{ $movie['name'] }}</div><div class="wo_movie-item__info"><span class="wo_movie-item__info__year">{{ date("Y",strtotime($movie['first_air_date'])) }} </span><div class="wo_movie-item__info__rating"><div class="rating">
+						<div class="wo_movie-item__details"><a href="/tvshows/show/{{ $tvId }}" data-event-name="See details click" data-event-label="Fifty Shades Darker" data-event-category="List Page" class="wo_movie-item__wrap track_event"><div class="wo_movie-item__title">{{ $movie['name'] }}</div><div class="wo_movie-item__info"><span class="wo_movie-item__info__year">{{ date("Y",strtotime($movie['first_air_date'])) }} </span><div class="wo_movie-item__info__rating"><div class="rating">
 						<span style="color:#fdc228">☆</span>
 					</div>&nbsp;{{ $movie['vote_average'] }}</div></div><p class="wo_movie-item__description">
 							{{ $movie['overview'] }}
