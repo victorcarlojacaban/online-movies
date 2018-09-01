@@ -465,7 +465,7 @@ Writer:
 		<div class="wo_video-thumb__rating">
 		<span>
 			<span style="color:#fdc228">☆</span>
-		{{ $similarMovie['vote_average'] }}
+			<span style="color:#9a9a9a">{{ $similarMovie['vote_average'] }}</span>
 		</span>
 		</div>
 		</div>
