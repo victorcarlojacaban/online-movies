@@ -4,15 +4,6 @@
 @section('content')
 <div class='wo_page-row wo_page-row--expanded'>
 	<div class='wo_container wo_listing-page-wrapper' id='js-wo_listing-page-wrapper'>
-		<!-- h3 class='wo_listing-title rf_text-center'>Privacy Police</h3> -->
-	<div class='wo_filters-toggles wo_hide-desktop'>
-		<a class="wo_filter--toggles__item wo_filter-toggle-genres" id="myBtn" href="#">
-			<img src="img/video-icon.svg" />
-			<span>Genres</span>
-		</a>
-	</div>
-
-	
 
 	<div class='wo_content-wrap'>
 		<div class='inside_movies_page wo_main-content'>
