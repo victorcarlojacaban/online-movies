@@ -451,10 +451,12 @@ Writer:
     @foreach($similarMovies as $similarMovie)
       <?php 
         $posterImageSimilar = !empty($similarMovie['poster_path']) ? "https://image.tmdb.org/t/p/w154".$similarMovie['poster_path'] : '/no-poster.jpg';
+
+        $movieId = $similarMovie['id'];
       ?>
 
-    <a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="#">
-    <div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $posterImageSimilar  }})"></div>
+    <a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/tvshows/show/{{ $movieId }}">
+    <div class="wo_video-thumb__poster" data-content="Watch Online" onclick="window.location.href='/movies/show/{{ $movieId }}'" style="background-image: url({{ $posterImageSimilar  }})"></div>
     <div class="wo_video-thumb__title">
     {{ $similarMovie['name'] }}
     </div>
@@ -1078,10 +1080,12 @@ More Like {{ $movie['name'] }}
 
   <?php 
     $posterImageSimilar = !empty($similarMovie['poster_path']) ? "https://image.tmdb.org/t/p/w154".$similarMovie['poster_path'] : '/no-poster.jpg';
+
+    $movieId = $similarMovie['id'];
   ?>
 
-<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="#">
-<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $posterImageSimilar  }})"></div>
+<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/tvshows/show/{{ $movieId }}">
+<div class="wo_video-thumb__poster" data-content="Watch Online"  onclick="window.location.href='/movies/show/{{ $movieId }}'"  style="background-image: url({{ $posterImageSimilar  }})"></div>
 <div class="wo_video-thumb__title">
 {{ $similarMovie['name'] }}
 </div>

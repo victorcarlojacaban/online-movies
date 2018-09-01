@@ -451,10 +451,12 @@ Writer:
 		@foreach($similarMovies as $similarMovie)
 			<?php 
 				$posterImageSimilar = !empty($similarMovie['poster_path']) ? "https://image.tmdb.org/t/p/w154".$similarMovie['poster_path'] : '/no-poster.jpg';
+
+				$movieId = $similarMovie['id'];
 			?>
 
-		<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="#">
-		<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $posterImageSimilar  }})"></div>
+		<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/movies/show/{{ $movieId }}">
+		<div class="wo_video-thumb__poster" data-content="Watch Online" onclick="window.location.href='/movies/show/{{ $movieId }}'"  style="background-image: url({{ $posterImageSimilar  }})"></div>
 		<div class="wo_video-thumb__title">
 		{{ $similarMovie['title'] }}
 		</div>
@@ -955,15 +957,15 @@ Users and You Like It
 <div class="cta-button-title">
 Best Streaming Services
 </div>
-<a class="cta-button track_event_with_conversion watch-now amazon_prime clickout"><div class="label"></div>
+<a class="cta-button track_event_with_conversion watch-now amazon_prime   clickout" ><div class="label"></div>
 <div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now hbo clickout"><div class="label"></div>
+</a><a class="cta-button track_event_with_conversion watch-now hbo   clickout"><div class="label"></div>
 <div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now showtimesub clickout"><div class="label"></div>
+</a><a class="cta-button track_event_with_conversion watch-now showtimesub   clickout"><div class="label"></div>
 <div class="button wo_btn--play">
 Free Trial
 </div>
@@ -971,7 +973,7 @@ Free Trial
 <div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more clickout"><div class="label"></div>
+</a><a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more  clickout"><div class="label"></div>
 <div class="button wo_btn--play">
 Free Trial
 </div>
@@ -979,7 +981,7 @@ Free Trial
 <div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more  clickout"><div class="label"></div>
+</a><a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more  clickout" ><div class="label"></div>
 <div class="button wo_btn--play">
 Free Trial
 </div>
@@ -998,9 +1000,7 @@ Free Trial
 </a>
 <span class="js-cta-buttons-toggle cta-buttons-toggle" style="color:#9a9a9a">
 Show More
-<!-- <span class="cta-buttons-toggle-open cta-buttons-toggle-btn">
-Show More
-</span> -->
+</span>
 <span class="cta-buttons-toggle-close cta-buttons-toggle-btn">
 Hide
 </span>
@@ -1080,10 +1080,12 @@ More Like {{ $movie['title'] }}
 
 	<?php 
 		$posterImageSimilar = !empty($similarMovie['poster_path']) ? "https://image.tmdb.org/t/p/w154".$similarMovie['poster_path'] : '/no-poster.jpg';
+
+		$movieId = $similarMovie['id'];
 	?>
 
-<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="#">
-<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $posterImageSimilar  }})"></div>
+<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/movies/show/{{ $movieId }}">
+<div class="wo_video-thumb__poster" data-content="Watch Online" onclick="window.location.href='/movies/show/{{ $movieId }}'" style="background-image: url({{ $posterImageSimilar  }})"></div>
 <div class="wo_video-thumb__title">
 {{ $similarMovie['title'] }}
 </div>
