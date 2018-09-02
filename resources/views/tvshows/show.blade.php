@@ -800,6 +800,26 @@ HD
 </span>
 </li>
 <ul class="wo_streaming-sites-buttons__out">
+    <li class="movie-poster-block__amazon-prime-trial wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--amazon_prime">
+<a class="cta-button-partners-row clickout track_event_with_conversion" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><div class="wo_streaming-sites-buttons__brand">
+<div class="source">Amazon Prime</div>
+<div class="image"></div>
+</div>
+<div class="wo_streaming-sites-buttons__description">
+Start Your 30-Day Free Trial
+</div>
+</a><div class="cta-like js-cta-like">
+<i class="cta-like__icon fa-thumbs-up"></i>
+<span class="cta-like__num">9,789</span>
+<span class="cta-like__text cta-like__text__off">
+Users Like It
+</span>
+<span class="cta-like__text cta-like__text__on">
+Users and You Like It
+</span>
+</div>
+
+</li>
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--cinemax">
 <a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')" data-link-type="amazon_channels" href="#"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">CINEMAX</div>

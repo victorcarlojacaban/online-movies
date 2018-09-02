@@ -58,7 +58,7 @@
 					$movieId = $movie['id'];
 					$movieTitle= str_replace(' ', '-',strtolower($movie['title']));
 					$movieTitle = str_replace("'", "", "$movieTitle");
-					$movieTitleAdwordUrl = '&keyword='. $movieTitle.'&matchtype={matcht}&creative={ad2}&gclid={556688}';
+					$movieTitleAdwordUrl = '&keyword='. $movieTitle.'&matchtype='.$parameters['matchtype'].'&creative='.$parameters['creative'].'&gclid='.$parameters['gclid'];
 				?>
 
 				<div class="wo_movie-item__link">

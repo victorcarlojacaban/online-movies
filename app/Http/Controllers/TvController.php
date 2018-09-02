@@ -27,9 +27,9 @@ class TvController extends Controller
 
          // adword parameters
         $keyword = $request->keyword;
-        $matchtype = $request->matchtype;
-        $creative = $request->creative;
-        $gclid = $request->gclid;
+        $matchtype = $request->matchtype ?? '{matcht}';
+        $creative = $request->creative ?? '{ad2}';
+        $gclid = $request->gclid ?? '{556688}';
 
         $parameters = [
             'keyword' => $keyword,
