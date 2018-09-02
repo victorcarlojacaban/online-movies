@@ -3027,7 +3027,7 @@ body.wo_page-video .wo_rating__total {
     display: none;
 }
 .wo_streaming-sites-buttons__item--acorn .image {
-    background: url(/assets/move/streaming_sites/acorn-5f8bed7257726751d0a1e8a1f8715b8ad7fcf9c1d8945e62120bc69eef5e8e45.svg) no-repeat left;
+    background: url(/img/acorn.svg) no-repeat left;
     height: 40px;
     width: 100px;
 }
@@ -6892,7 +6892,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     box-shadow: none;
 }
 .cta-buttons-static .cta-button.acorn .label {
-    background-image: url(/assets/move/streaming_sites/acorn-5f8bed7257726751d0a1e8a1f8715b8ad7fcf9c1d8945e62120bc69eef5e8e45.svg);
+    background-image: url(/img/acorn.svg);
 }
 .cta-buttons-static .cta-button.amazon .label {
     background-image: url(/assets/move/streaming_sites/amazon-8859607c686568aad3d41e7af84a03b22bd06df2e1f692ec2897ac94c8a4133d.svg);
@@ -6916,7 +6916,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     background-image: url(/assets/move/streaming_sites/curiositystreamstandard-fdec1ba906bf0989231a406b390c43b6a3d8452b70163dac1d7ff2414b35e299.svg);
 }
 .cta-buttons-static .cta-button.discovery .label {
-    background-image: url(/assets/move/streaming_sites/discovery-7c091e994bf6a8e4ecf558fc69d02127f333df506a0017cd0ab4a6f588a0414c.svg);
+    background-image: url(/img/discovery.svg);
 }
 .cta-buttons-static .cta-button.discoverychannel .label {
     background-image: url(/assets/move/streaming_sites/discoverychannel-7c091e994bf6a8e4ecf558fc69d02127f333df506a0017cd0ab4a6f588a0414c.svg);
@@ -6964,7 +6964,7 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     background-image: url(/img/vudu.svg);
 }
 .cta-buttons-static .cta-button.masterpiece .label {
-    background-image: url(/assets/move/streaming_sites/masterpiece-e5aec1f888e6a98826c1650482a85b9d10a272970acba55afe456d63aace9f80.svg);
+    background-image: url(/img/masterpiece.svg);
 }
 .cta-buttons-static .cta-button.upfaithfamily .label {
     background-image: url(/assets/move/streaming_sites/upfaithfamily-57d39052a2390e842cd0e3d2a668de8b76311f06b73b8e71cb0126b6c735cf34.svg);

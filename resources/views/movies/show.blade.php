@@ -79,12 +79,13 @@ Free Trial
 <div class="button wo_btn--play">
 Free Trial
 </div>
-</a><span class="js-cta-buttons-toggle cta-buttons-toggle">
+</a>
+<span class="js-cta-buttons-toggle cta-buttons-toggle">
 <span class="cta-buttons-toggle-open cta-buttons-toggle-btn">
-Show More
+<a style="color:#9a9a9a" onclick="showBestStreaming()">Show More</a>
 </span>
 <span class="cta-buttons-toggle-close cta-buttons-toggle-btn">
-Hide
+<a style="color:#9a9a9a" onclick="hideBestStreaming()">Hide</a>
 </span>
 </span>
 </div>
@@ -221,11 +222,13 @@ Free Trial
 <div class="button wo_btn--play">
 Free Trial
 </div>
-</a><span class="js-cta-buttons-toggle cta-buttons-toggle" style="color:#9a9a9a">
-Show More
+</a>
+<span class="js-cta-buttons-toggle cta-buttons-toggle">
+<span class="cta-buttons-toggle-open cta-buttons-toggle-btn">
+<a style="color:#9a9a9a" onclick="showBestStreaming()">Show More</a>
 </span>
 <span class="cta-buttons-toggle-close cta-buttons-toggle-btn">
-Hide
+<a style="color:#9a9a9a" onclick="hideBestStreaming()">Hide</a>
 </span>
 </span>
 </div>
@@ -357,13 +360,12 @@ Free Trial
 Free Trial
 </div>
 </a>
-<span class="js-cta-buttons-toggle cta-buttons-toggle" style="color:#9a9a9a">
-Show More
-<!-- <span class="cta-buttons-toggle-open cta-buttons-toggle-btn">
-Show More
-</span> -->
+<span class="js-cta-buttons-toggle cta-buttons-toggle">
+<span class="cta-buttons-toggle-open cta-buttons-toggle-btn">
+<a style="color:#9a9a9a" onclick="showBestStreaming()">Show More</a>
+</span>
 <span class="cta-buttons-toggle-close cta-buttons-toggle-btn">
-Hide
+<a style="color:#9a9a9a" onclick="hideBestStreaming()">Hide</a>
 </span>
 </span>
 </div>
@@ -529,11 +531,13 @@ Free Trial
 <div class="button wo_btn--play">
 Free Trial
 </div>
-</a><span class="js-cta-buttons-toggle cta-buttons-toggle" style="color:#9a9a9a">
-Show More
+</a>
+<span class="js-cta-buttons-toggle cta-buttons-toggle">
+<span class="cta-buttons-toggle-open cta-buttons-toggle-btn">
+<a style="color:#9a9a9a" onclick="showBestStreaming()">Show More</a>
 </span>
 <span class="cta-buttons-toggle-close cta-buttons-toggle-btn">
-Hide
+<a style="color:#9a9a9a" onclick="hideBestStreaming()">Hide</a>
 </span>
 </span>
 </div>
@@ -635,12 +639,13 @@ Free Trial
 <div class="button wo_btn--play">
 Free Trial
 </div>
-</a><span class="js-cta-buttons-toggle cta-buttons-toggle">
+</a>
+<span class="js-cta-buttons-toggle cta-buttons-toggle">
 <span class="cta-buttons-toggle-open cta-buttons-toggle-btn">
-Show More
+<a style="color:#9a9a9a" onclick="showBestStreaming()">Show More</a>
 </span>
 <span class="cta-buttons-toggle-close cta-buttons-toggle-btn">
-Hide
+<a style="color:#9a9a9a" onclick="hideBestStreaming()">Hide</a>
 </span>
 </span>
 </div>
@@ -713,12 +718,13 @@ Free Trial
 <div class="button wo_btn--play">
 Free Trial
 </div>
-</a><span class="js-cta-buttons-toggle cta-buttons-toggle">
+</a>
+<span class="js-cta-buttons-toggle cta-buttons-toggle">
 <span class="cta-buttons-toggle-open cta-buttons-toggle-btn">
-Show More
+<a style="color:#9a9a9a" onclick="showBestStreaming()">Show More</a>
 </span>
 <span class="cta-buttons-toggle-close cta-buttons-toggle-btn">
-Hide
+<a style="color:#9a9a9a" onclick="hideBestStreaming()">Hide</a>
 </span>
 </span>
 </div>
@@ -950,6 +956,14 @@ Users and You Like It
 </li>
 </ul>
 </ul>
+<!-- <style type="text/css">
+	.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+</style> -->
 
 </div>
 <div class="wo_section__content wo_section--video-main-right">
@@ -957,6 +971,7 @@ Users and You Like It
 <div class="cta-button-title">
 Best Streaming Services
 </div>
+
 <a class="cta-button track_event_with_conversion watch-now amazon_prime   clickout" ><div class="label"></div>
 <div class="button wo_btn--play">
 Free Trial
@@ -969,7 +984,10 @@ Free Trial
 <div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now starzsub not_visible btn-more  clickout"><div class="label"></div>
+</a>
+
+<div id="toggleShow">
+<a class="cta-button track_event_with_conversion watch-now starzsub not_visible btn-more  clickout"><div class="label"></div>
 <div class="button wo_btn--play">
 Free Trial
 </div>
@@ -998,14 +1016,18 @@ Free Trial
 Free Trial
 </div>
 </a>
-<span class="js-cta-buttons-toggle cta-buttons-toggle" style="color:#9a9a9a">
-Show More
+</div>
+<span class="js-cta-buttons-toggle cta-buttons-toggle">
+<span class="cta-buttons-toggle-open cta-buttons-toggle-btn">
+<a style="color:#9a9a9a" onclick="showBestStreaming()">Show More</a>
 </span>
 <span class="cta-buttons-toggle-close cta-buttons-toggle-btn">
-Hide
+<a style="color:#9a9a9a" onclick="hideBestStreaming()">Hide</a>
 </span>
 </span>
+
 </div>
+
 
 <div class="disclaimer-best-streaming">
 <div class="disclaimer-best-streaming__row">
@@ -1174,6 +1196,13 @@ IMDb
 	        $(this).removeClass('tabs__toggle_active');
 	       }
 	    }
+	}
+
+	function showBestStreaming() {
+		$('div.cta-buttons-static').addClass('cta-buttons-toggle-container-open');
+	}
+	function hideBestStreaming() {
+		$('div.cta-buttons-static').removeClass('cta-buttons-toggle-container-open');
 	}
 </script>
 @endsection
