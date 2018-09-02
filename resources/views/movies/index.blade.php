@@ -2,6 +2,12 @@
 @extends('layouts.app')
 
 @section('content')
+<?php 
+	$matchtype = $parameters['matchtype'];
+	$keyword = $parameters['keyword'];
+	$creative = $parameters['creative'];
+	$gclid = $parameters['gclid'];
+?>
 <div class='wo_page-row wo_page-row--expanded'>
 	<div class='wo_container wo_listing-page-wrapper' id='js-wo_listing-page-wrapper'>
 		<h3 class='wo_listing-title rf_text-center'>Find where to stream all movies on Freemovieswatching.com</h3>
@@ -51,7 +57,8 @@
 
 					$movieId = $movie['id'];
 					$movieTitle= str_replace(' ', '-',strtolower($movie['title']));
-					$movieTitleAdwordUrl = '&keyword='.$movieTitle.'&matchtype={matcht}&creative={ad2}&gclid={556688}';
+					$movieTitle = str_replace("'", "", "$movieTitle");
+					$movieTitleAdwordUrl = '&keyword='. $movieTitle.'&matchtype={matcht}&creative={ad2}&gclid={556688}';
 				?>
 
 				<div class="wo_movie-item__link">
@@ -180,6 +187,11 @@
 		    }
 		}
 	}); 
+
+	function redirectAds(keyword, matchtype, creative, gclid)
+	{
+		return window.location.replace("http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword="+keyword+"&matchtype="+matchtype+"&creative="+creative+"&gclid="+gclid);
+	}
 </script>
 
 @endsection

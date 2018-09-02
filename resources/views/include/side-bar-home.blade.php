@@ -19,6 +19,6 @@
 	</div>
 	</div>
 	<div class='wo_amazon-banner'>
-		<a class="clickout track_event_with_conversion" href="#"><img width="100%" src="/img/amazon-banner-01.png"></a>
+		<a class="clickout track_event_with_conversion" href="#" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><img width="100%" src="/img/amazon-banner-01.png"></a>
 	</div>
 </div>

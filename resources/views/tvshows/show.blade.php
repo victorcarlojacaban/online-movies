@@ -1,7 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="wo_page-row wo_page-row--expanded">
+<?php 
+  $matchtype = $parameters['matchtype'];
+  $keyword = $parameters['keyword'];
+  $creative = $parameters['creative'];
+  $gclid = $parameters['gclid'];
+?>
+<div class="wo_page-row wo_page-row--expanded">
 <div class="wo_container">
 <div>
 <div class="wo_page-video__row rf_row wo_page-video__row--main">
@@ -40,43 +46,43 @@
 Best Streaming Services
 </div>
 <a class="cta-button track_event_with_conversion watch-now amazon_prime clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now hbo clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now showtimesub clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now starzsub not_visible btn-more clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now acorn not_visible btn-more clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now masterpiece not_visible btn-more clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now cbs not_visible btn-more clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now fubo not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a>
@@ -132,7 +138,7 @@ Writer:
 
 <div class="wo_section wo_section--amazon-banner rf_visible-lg rf_visible-md">
 <div class="wo_section__content">
-<a class="clickout track_event_with_conversion"><img class="img-responsive" src="/img/amazon-banner-01.png">
+<a class="clickout track_event_with_conversion" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><img class="img-responsive" src="/img/amazon-banner-01.png">
 </a>
 </div>
 </div>
@@ -141,7 +147,7 @@ Writer:
 <div class="wo_page-video__right-column">
 <div class="wo_section rf_visible-xs">
 <div class="wo_section--amazon-banner">
-<a class="clickout track_event_with_conversion"><img class="img-responsive" src="/img/amazon-banner-02.png">
+<a class="clickout track_event_with_conversion" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><img class="img-responsive" src="/img/amazon-banner-02.png">
 </a>
 </div>
 </div>
@@ -183,43 +189,43 @@ Writer:
 Best Streaming Services
 </div>
 <a class="cta-button track_event_with_conversion watch-now amazon_prime clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now hbo clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now showtimesub clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now starzsub not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now acorn not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now masterpiece not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now cbs not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now fubo not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a>
@@ -320,43 +326,43 @@ Writer:
 Best Streaming Services
 </div>
 <a class="cta-button track_event_with_conversion watch-now amazon_prime clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now hbo clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now showtimesub clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now starzsub not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now acorn not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now masterpiece not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now cbs not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now fubo not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a>
@@ -508,27 +514,27 @@ Free Trial
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now acorn not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now masterpiece not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now cbs not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now fubo not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a>
@@ -600,43 +606,43 @@ Writer:
 Best Streaming Services
 </div>
 <a class="cta-button track_event_with_conversion watch-now amazon_prime clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now hbo   clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now showtimesub   clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now starzsub not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now acorn not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now masterpiece not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now cbs not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now fubo not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a>
@@ -679,43 +685,43 @@ Free Trial
 Best Streaming Services
 </div>
 <a class="cta-button track_event_with_conversion watch-now amazon_prime clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now hbo   clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now showtimesub   clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now starzsub not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now acorn not_visible btn-more clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now masterpiece not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now cbs not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now fubo not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a>
@@ -795,7 +801,7 @@ HD
 </li>
 <ul class="wo_streaming-sites-buttons__out">
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--cinemax">
-<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" target="_blank" data-link-type="amazon_channels" href="#"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')" data-link-type="amazon_channels" href="#"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">CINEMAX</div>
 <div class="image"></div>
 </div>
@@ -815,7 +821,7 @@ Users and You Like It
 
 </li>
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--hbo">
-<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" target="_blank" data-link-type="amazon_channels" href="#"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')" data-link-type="amazon_channels" href="#"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">HBO</div>
 <div class="image"></div>
 </div>
@@ -835,7 +841,7 @@ Users and You Like It
 
 </li>
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--cbs">
-<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" target="_blank" data-link-type="cbs" href="#"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')" data-link-type="cbs" href="#"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">CBS</div>
 <div class="image"></div>
 </div>
@@ -855,7 +861,7 @@ Users and You Like It
 
 </li>
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--fubo">
-<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" target="_blank"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">Fubo</div>
 <div class="image"></div>
 </div>
@@ -875,7 +881,7 @@ Users and You Like It
 
 </li>
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--amazon_title">
-<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" target="_blank" data-link-type="amazon_title" href="#"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')" data-link-type="amazon_title" href="#"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">AMAZON</div>
 <div class="image"></div>
 </div>
@@ -895,7 +901,7 @@ Users and You Like It
 
 </li>
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--youtube">
-<a class="cta-button-partners-row clickout track_event" rel="nofollow noreferrer" target="_blank" data-event-category="Title Page" data-event-label="Fifty Shades Darker" data-event-name="youtube CTA Click" data-locale="us" data-link-type="youtube"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event" rel="nofollow noreferrer" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')" data-event-category="Title Page" data-event-label="Fifty Shades Darker" data-event-name="youtube CTA Click" data-locale="us" data-link-type="youtube"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">YouTube</div>
 <div class="image"></div>
 </div>
@@ -915,7 +921,7 @@ Users and You Like It
 
 </li>
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--itunes">
-<a class="cta-button-partners-row clickout track_event"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">Itunes Store</div>
 <div class="image"></div>
 </div>
@@ -935,7 +941,7 @@ Users and You Like It
 
 </li>
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--vudu">
-<a class="cta-button-partners-row clickout track_event" rel="nofollow noreferrer" target="_blank" data-event-category="Title Page"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event" rel="nofollow noreferrer" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')" data-event-category="Title Page"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">Vudu</div>
 <div class="image"></div>
 </div>
@@ -964,43 +970,43 @@ Users and You Like It
 Best Streaming Servicess
 </div>
 <a class="cta-button track_event_with_conversion watch-now amazon_prime   clickout" ><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now hbo   clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now showtimesub   clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now starzsub not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now acorn not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more  clickout" ><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now masterpiece not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now cbs not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a><a class="cta-button track_event_with_conversion watch-now fubo not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play">
+<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
 </a>
@@ -1036,7 +1042,7 @@ Not all titles featured are available in each service.
 </div>
 <div class="wo_section rf_visible-lg rf_visible-md banner-out">
 <div class="wo_section--amazon-banner">
-<a class="clickout track_event_with_conversion " rel="nofollow noreferrer" target="_blank"><img class="img-responsive" src="/img/amazon-banner-02.png">
+<a class="clickout track_event_with_conversion " rel="nofollow noreferrer" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><img class="img-responsive" src="/img/amazon-banner-02.png">
 </a>
 </div>
 </div>
@@ -1188,6 +1194,11 @@ IMDb
   }
   function hideBestStreaming() {
     $('div.cta-buttons-static').removeClass('cta-buttons-toggle-container-open');
+  }
+
+  function redirectAds(keyword, matchtype, creative, gclid)
+  {
+    return window.location.replace("http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword="+keyword+"&matchtype="+matchtype+"&creative="+creative+"&gclid="+gclid);
   }
 </script>
 @endsection

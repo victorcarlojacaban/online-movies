@@ -21,6 +21,19 @@ class MovieController extends Controller
         $movieTv   = $request->tvshow;
         $search    = $request->search;
 
+         // adword parameters
+        $keyword = $request->keyword;
+        $matchtype = $request->matchtype;
+        $creative = $request->creative;
+        $gclid = $request->gclid;
+
+        $parameters = [
+            'keyword' => $keyword,
+            'matchtype' => $matchtype,
+            'creative' => $creative,
+            'gclid' => $gclid,
+        ];
+
         if ($genreData) {
             $movies = Tmdb::getGenresApi()->getMovies($genreData, ['page' => 1])['results'];
         } elseif ($movieType) {
@@ -49,7 +62,7 @@ class MovieController extends Controller
 
         $genres = Tmdb::getGenresApi()->getMovieGenres();
 
-        return view('movies.index', compact('movies', 'genres', 'genreData', 'movieType'));
+        return view('movies.index', compact('movies', 'genres', 'genreData', 'movieType', 'parameters'));
     }
 
     /**
@@ -145,7 +158,7 @@ class MovieController extends Controller
      * 
      * @return Resource
      */
-    public function show($id)
+    public function show(Request $request, $id)
     {
         $movie = Tmdb::getMoviesApi()->getMovie($id);
 
@@ -160,6 +173,21 @@ class MovieController extends Controller
         $directors = [];
         $writers = [];
 
+
+        // adword parameters
+        $keyword = $request->keyword;
+        $matchtype = $request->matchtype;
+        $creative = $request->creative;
+        $gclid = $request->gclid;
+
+
+        $parameters = [
+            'keyword' => $keyword,
+            'matchtype' => $matchtype,
+            'creative' => $creative,
+            'gclid' => $gclid,
+        ];
+
         foreach ($crews as $crew) {
             if ($crew['job'] == 'Director') {
                 $directors[] = $crew['name'];
@@ -170,7 +198,7 @@ class MovieController extends Controller
             } 
         }
 
-        return view('movies.show', compact('movie', 'similarMovies', 'directors', 'writers', 'casts', 'video'));
+        return view('movies.show', compact('movie', 'similarMovies', 'directors', 'writers', 'casts', 'video', 'parameters'));
 
     }
  }

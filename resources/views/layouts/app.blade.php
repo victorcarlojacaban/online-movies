@@ -42,7 +42,7 @@
 			</a>
 		</li>
 		<li class='wo_nav__item'>
-			<a class='wo_nav__link' href='/movies'>
+			<a class='wo_nav__link' href='/movies?&keyword={money}&matchtype={matcht}&creative={ad2}&gclid={556688}'>
 				<i class='wo_nav__icon wo-icons wo-icons--clapperboard-o'></i>
 			Movies
 			</a>
@@ -65,14 +65,14 @@
 					<li class='wo_nav__item rf_visible-xs-inline-block'>
 						<button class='wo_js_search-toggle-btn wo_header__btn wo_header__btn--search-toggle wo_btn' type='button'>
 							@if(request()->path() == 'movies')
-								<a href="/tvshows">TV SHOWS</a>
+								<a href="/tvshows?&keyword={money}&matchtype={matcht}&creative={ad2}&gclid={556688}">TV SHOWS</a>
 							@else
-							    <a href="/movies">Movies</a> 
+							    <a href="/movies?&keyword={money}&matchtype={matcht}&creative={ad2}&gclid={556688}">Movies</a> 
 							@endif
 						</button>
 					</li>
 				</ul>
-				<form class="wo_search-form" action="/movies">
+				<form class="wo_search-form" action="/movies?&keyword={money}&matchtype={matcht}&creative={ad2}&gclid={556688}">
 					
 
 					<div class='wo_search-form__container'>

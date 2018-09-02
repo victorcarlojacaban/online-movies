@@ -25,9 +25,22 @@ class TvController extends Controller
             $tvshows = Tmdb::getSearchApi()->searchTv($search)['results'];
         }
 
+         // adword parameters
+        $keyword = $request->keyword;
+        $matchtype = $request->matchtype;
+        $creative = $request->creative;
+        $gclid = $request->gclid;
+
+        $parameters = [
+            'keyword' => $keyword,
+            'matchtype' => $matchtype,
+            'creative' => $creative,
+            'gclid' => $gclid,
+        ];
+
         $genres = Tmdb::getGenresApi()->getMovieGenres();
 
-        return view('tvshows.index', compact('tvshows', 'genres'));
+        return view('tvshows.index', compact('tvshows', 'genres', 'parameters'));
     }
 
     /**
@@ -93,11 +106,23 @@ class TvController extends Controller
         }
     }
 
-    public function show($id)
+    public function show(Request $request, $id)
     {
         $movie = Tmdb::getTvApi()->getTvshow($id);
 
-        // dd(var_dump($movie));
+        // adword parameters
+        $keyword = $request->keyword;
+        $matchtype = $request->matchtype;
+        $creative = $request->creative;
+        $gclid = $request->gclid;
+
+        $parameters = [
+            'keyword' => $keyword,
+            'matchtype' => $matchtype,
+            'creative' => $creative,
+            'gclid' => $gclid,
+        ];
+
 
         $similarMovies = Tmdb::getTvApi()->getSimilar($id)['results'];
 
@@ -120,6 +145,6 @@ class TvController extends Controller
             } 
         }
 
-        return view('tvshows.show', compact('movie', 'similarMovies', 'directors', 'writers', 'casts', 'video'));
+        return view('tvshows.show', compact('movie', 'similarMovies', 'directors', 'writers', 'casts', 'video', 'parameters'));
     }
  }

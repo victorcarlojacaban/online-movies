@@ -12,14 +12,32 @@
 */
 
 Route::get('/', function () {
-    return redirect('movies');
+    return redirect('movies?&keyword={money}&matchtype={matcht}&creative={ad2}&gclid={556688}');
 });
 
-Route::get('/movies', 'MovieController@index');
+// Route::get('/movies', 'MovieController@index');
+
+
+Route::get('/movies', [
+    'uses' => 'MovieController@index',
+    'keyword' => '{money}',
+    'matchtype' => '{matcht}',
+    'creative' => '{ad2}',
+    'gclid' => '{556688}'
+]);
+
+
 Route::post('loaddata','MovieController@loadDataAjax');
 Route::get('/movies/show/{id}', 'MovieController@show');
 
-Route::get('/tvshows', 'TvController@index');
+Route::get('/tvshows', [
+    'uses' => 'TvController@index',
+    'keyword' => '{money}',
+    'matchtype' => '{matcht}',
+    'creative' => '{ad2}',
+    'gclid' => '{556688}'
+]);
+
 Route::post('loaddatatv','TvController@loadDataAjax');
 Route::get('/tvshows/show/{id}', 'TvController@show');
 
