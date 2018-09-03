@@ -140,7 +140,7 @@ Writer:
 
 <div class="wo_section wo_section--amazon-banner rf_visible-lg rf_visible-md">
 <div class="wo_section__content">
-<a class="clickout track_event_with_conversion" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><img class="img-responsive" src="/img/amazon-banner-01.png">
+<a class="clickout track_event_with_conversion" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><img class="img-responsive" src="/img/amazon-banner-01.png">
 </a>
 </div>
 </div>
@@ -149,7 +149,7 @@ Writer:
 <div class="wo_page-video__right-column">
 <div class="wo_section rf_visible-xs">
 <div class="wo_section--amazon-banner">
-<a class="clickout track_event_with_conversion" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><img class="img-responsive" src="/img/amazon-banner-02.png">
+<a class="clickout track_event_with_conversion" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><img class="img-responsive" src="/img/amazon-banner-02.png">
 </a>
 </div>
 </div>
@@ -685,44 +685,47 @@ Free Trial
 <div class="cta-button-title">
 Best Streaming Services
 </div>
-<a class="cta-button track_event_with_conversion watch-now amazon_prime clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+<a class="cta-button track_event_with_conversion watch-now amazon_prime clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now hbo   clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a>
+<a class="cta-button track_event_with_conversion watch-now hbo   clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now showtimesub   clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a>
+<a class="cta-button track_event_with_conversion watch-now showtimesub   clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now starzsub not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a><a class="cta-button track_event_with_conversion watch-now starzsub not_visible btn-more  clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a><a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more  clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now acorn not_visible btn-more clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a>
+<a class="cta-button track_event_with_conversion watch-now acorn not_visible btn-more clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a><a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more  clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now masterpiece not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a><a class="cta-button track_event_with_conversion watch-now masterpiece not_visible btn-more  clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now cbs not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a><a class="cta-button track_event_with_conversion watch-now cbs not_visible btn-more  clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now fubo not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a><a class="cta-button track_event_with_conversion watch-now fubo not_visible btn-more  clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
 </a>
@@ -802,8 +805,8 @@ HD
 </li>
 <ul class="wo_streaming-sites-buttons__out">
 
-<li class="movie-poster-block__amazon-prime-trial wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--amazon_prime amazon_prime_disp_1"  style="display:none" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
-<a class="cta-button-partners-row clickout track_event_with_conversion"><div class="wo_streaming-sites-buttons__brand">
+<li class="movie-poster-block__amazon-prime-trial wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--amazon_prime amazon_prime_disp_1"  style="display:none">
+<a class="cta-button-partners-row clickout track_event_with_conversion" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">Amazon Prime </div>
 <div class="image"></div>
 </div>
@@ -814,7 +817,7 @@ Start Your 30-Day Free Trials
 </li>
 
 <li class="movie-poster-block__amazon-prime-trial wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--amazon_prime amazon_prime_disp_2">
-<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" data-link-type="amazon_channels" href="#" onclick="redirectAds('avengers:-infinity-war', '{matcht}', '{ad2}', '{556688}')"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" data-link-type="amazon_channels" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">Amazon Prime</div>
 <div class="image"></div>
 </div>
@@ -836,7 +839,7 @@ Users and You Like It
 
 
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--cinemax">
-<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer"  data-link-type="amazon_channels" href="#" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer"  data-link-type="amazon_channels" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">CINEMAX</div>
 <div class="image"></div>
 </div>
@@ -856,7 +859,7 @@ Users and You Like It
 
 </li>
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--hbo">
-<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" data-link-type="amazon_channels" href="#" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" data-link-type="amazon_channels" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">HBO</div>
 <div class="image"></div>
 </div>
@@ -876,7 +879,7 @@ Users and You Like It
 
 </li>
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--cbs">
-<a class="cta-button-partners-row clickout track_event_with_conversion" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event_with_conversion" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">CBS</div>
 <div class="image"></div>
 </div>
@@ -896,7 +899,7 @@ Users and You Like It
 
 </li>
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--fubo">
-<a class="cta-button-partners-row clickout track_event_with_conversion" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event_with_conversion" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">Fubo</div>
 <div class="image"></div>
 </div>
@@ -916,7 +919,7 @@ Users and You Like It
 
 </li>
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--amazon_title">
-<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" target="_blank" data-link-type="amazon_title" href="#" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event_with_conversion" rel="nofollow noreferrer" target="_blank" data-link-type="amazon_title" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">AMAZON</div>
 <div class="image"></div>
 </div>
@@ -936,7 +939,7 @@ Users and You Like It
 
 </li>
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--youtube">
-<a class="cta-button-partners-row clickout track_event" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">YouTube</div>
 <div class="image"></div>
 </div>
@@ -956,7 +959,7 @@ Users and You Like It
 
 </li>
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--itunes">
-<a class="cta-button-partners-row clickout track_event" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">Itunes Store</div>
 <div class="image"></div>
 </div>
@@ -976,7 +979,7 @@ Users and You Like It
 
 </li>
 <li class="wo_streaming-sites-buttons__item wo_streaming-sites-buttons__item--vudu">
-<a class="cta-button-partners-row clickout track_event" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><div class="wo_streaming-sites-buttons__brand">
+<a class="cta-button-partners-row clickout track_event" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="wo_streaming-sites-buttons__brand">
 <div class="source">Vudu</div>
 <div class="image"></div>
 </div>
@@ -1013,47 +1016,54 @@ Users and You Like It
 Best Streaming Services
 </div>
 
-<a class="cta-button track_event_with_conversion watch-now amazon_prime   clickout" ><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+<a class="cta-button track_event_with_conversion watch-now amazon_prime   clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now hbo   clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a>
+<a class="cta-button track_event_with_conversion watch-now hbo   clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}">
+	<div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now showtimesub   clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a><a class="cta-button track_event_with_conversion watch-now showtimesub   clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
 </a>
 
 <div id="toggleShow">
-<a class="cta-button track_event_with_conversion watch-now starzsub not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+<a class="cta-button track_event_with_conversion watch-now starzsub not_visible btn-more  clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a>
+<a class="cta-button track_event_with_conversion watch-now cinemax not_visible btn-more  clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now acorn not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a>
+<a class="cta-button track_event_with_conversion watch-now acorn not_visible btn-more  clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more  clickout" ><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a>
+<a class="cta-button track_event_with_conversion watch-now discovery not_visible btn-more  clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now masterpiece not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a>
+<a class="cta-button track_event_with_conversion watch-now masterpiece not_visible btn-more  clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now cbs not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a><a class="cta-button track_event_with_conversion watch-now cbs not_visible btn-more  clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
-</a><a class="cta-button track_event_with_conversion watch-now fubo not_visible btn-more  clickout"><div class="label"></div>
-<div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
+</a>
+<a class="cta-button track_event_with_conversion watch-now fubo not_visible btn-more  clickout" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}'"><div class="label"></div>
+<div class="button wo_btn--play">
 Free Trial
 </div>
 </a>
@@ -1092,7 +1102,7 @@ Not all titles featured are available in each service.
 </div>
 <div class="wo_section rf_visible-lg rf_visible-md banner-out">
 <div class="wo_section--amazon-banner">
-<a class="clickout track_event_with_conversion " rel="nofollow noreferrer" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><img class="img-responsive" src="/img/amazon-banner-02.png">
+<a class="clickout track_event_with_conversion " rel="nofollow noreferrer" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><img class="img-responsive" src="/img/amazon-banner-02.png">
 </a>
 </div>
 </div>

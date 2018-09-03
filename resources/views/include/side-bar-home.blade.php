@@ -10,15 +10,15 @@
 	<div class='wo_filter-block'>
 	<div class='wo_filter-block__title'>Popular Searches</div>
 	<div class='wo_popular-searches'>
-		<a class="wo_popular__item" href="/movies?type=toprated&keyword={{ $parameters['keyword'] }}&matchtype={{ $parameters['matchtype'] }}&creative={{ $parameters['creative']}}&gclid={{ $parameters['gclid'] }} ">Top Rated Movies</a>
-		<a class="wo_popular__item" href="/movies?type=upcoming&keyword={{ $parameters['keyword'] }}&matchtype={{ $parameters['matchtype'] }}&creative={{ $parameters['creative']}}&gclid={{ $parameters['gclid'] }} ">Top Upcoming Movies</a>
-		<a class="wo_popular__item" href="/movies?type=popular&keyword={{ $parameters['keyword'] }}&matchtype={{ $parameters['matchtype'] }}&creative={{ $parameters['creative']}}&gclid={{ $parameters['gclid'] }} ">Most Popular Movies</a>
-		<a class="wo_popular__item" href="/movies?type=nowplaying&keyword={{ $parameters['keyword'] }}&matchtype={{ $parameters['matchtype'] }}&creative={{ $parameters['creative']}}&gclid={{ $parameters['gclid'] }} ">Now Playing Movies</a>
+		<a class="wo_popular__item" href="/movies?type=toprated&keyword={{ $parameters['keyword'] }}&matchtype={{ $parameters['matchtype'] }}&creative={{ $parameters['creative']}}&gclid={{ $parameters['gclid'] }}">Top Rated Movies</a>
+		<a class="wo_popular__item" href="/movies?type=upcoming&keyword={{ $parameters['keyword'] }}&matchtype={{ $parameters['matchtype'] }}&creative={{ $parameters['creative']}}&gclid={{ $parameters['gclid'] }}">Top Upcoming Movies</a>
+		<a class="wo_popular__item" href="/movies?type=popular&keyword={{ $parameters['keyword'] }}&matchtype={{ $parameters['matchtype'] }}&creative={{ $parameters['creative']}}&gclid={{ $parameters['gclid'] }}">Most Popular Movies</a>
+		<a class="wo_popular__item" href="/movies?type=nowplaying&keyword={{ $parameters['keyword'] }}&matchtype={{ $parameters['matchtype'] }}&creative={{ $parameters['creative']}}&gclid={{ $parameters['gclid'] }}">Now Playing Movies</a>
 		
 	</div>
 	</div>
 	</div>
 	<div class='wo_amazon-banner'>
-		<a class="clickout track_event_with_conversion" href="#" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')"><img width="100%" src="/img/amazon-banner-01.png"></a>
+		<a class="clickout track_event_with_conversion" href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}"><img width="100%" src="/img/amazon-banner-01.png"></a>
 	</div>
 </div>
