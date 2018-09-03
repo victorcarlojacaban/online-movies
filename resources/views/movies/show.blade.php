@@ -1108,7 +1108,7 @@ Starring
 			$castImage = !empty($cast['profile_path']) ? "https://image.tmdb.org/t/p/w154".$cast['profile_path'] : '/img/no-profile.png';
 		?>
 
-		<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/movies/show/{{ $movieId }}">
+		<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies">
 		<div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $castImage  }})"></div>
 		<div class="wo_video-thumb__title">
 		{{ $cast['name'] }}
