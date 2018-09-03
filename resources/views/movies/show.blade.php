@@ -164,15 +164,12 @@ Writer:
 <div class="tabs__toggle custom_toggle" id="moreToggle">
 <a style="color:white" onclick="toggle('more', 'moreToggle')">More Like</a>
 </div>
-<!-- <div class="tabs__toggle custom_toggle" id="trailerToggle">
-<a style="color:white" onclick="toggle('trailer', 'trailerToggle')">Trailer</a>
-</div>
- -->
 <div class="tabs__toggle custom_toggle" id="trailerToggle">
 <a style="color:white" onclick="toggle('trailer', 'trailerToggle')">Trailer</a>
 </div>
 </div>
-<div class="tabs__tab tabs__tab__active custom_tab" id="overview">
+<br/>
+<div class="tabs__tab tabs__tab__active custom_tab" id="overview" style="margin-top: 20px;">
 <div class="wo_synopsis">{{ $movie['overview'] }}</div>
 <br/>
 
