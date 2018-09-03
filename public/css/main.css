@@ -11372,8 +11372,8 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
 }
 .wo_page-movies .wo_header .wo_header-logo {
     background-image: url(/img/main-logo.png);
-    height: 132px;
-    width: 152px;
+    height: 50px;
+    width: 190px;
 }
 .wo_page-movies .wo_header .wo-icons--search {
     color: #1ed760;
