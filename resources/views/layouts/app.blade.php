@@ -82,7 +82,7 @@
 					</div>
 				</form>
 				<div class='wo_search-description'>UNLIMITED STREAMING WITH THOUSANDS OF MOVIES & TV SHOWS</div>
-				<a class="clickout track_event_with_conversion navbar-banner__link" rel="nofollow noreferrer" target="_blank" href=""><div class='wo_header-trial-btn'>Try 30-Day Trial</div>
+				<a class="clickout track_event_with_conversion navbar-banner__link" rel="nofollow noreferrer"  href="http://www.myleadtracks.com/click.php?c=108&key=21hi8p27zvpp48v6hah81679&keyword={{ $keyword }}&matchtype={{ $matchtype }}&creative={{ $creative }}&gclid={{ $gclid }}'"><div class='wo_header-trial-btn'>Try 30-Day Trial</div>
 				</a>
 			</div>
 		</div>
