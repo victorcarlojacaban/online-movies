@@ -22,7 +22,7 @@ class MovieController extends Controller
         $search    = $request->search;
 
          // adword parameters
-        $keyword = $request->keyword;
+        $keyword = $request->keyword ?? '{money}';
         $matchtype = $request->matchtype ?? '{matcht}';
         $creative = $request->creative ?? '{ad2}';
         $gclid = $request->gclid ?? '{556688}';
