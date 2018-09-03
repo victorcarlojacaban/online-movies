@@ -1072,24 +1072,23 @@ Starring
 <div class="actor_posters">
 <div class="actor_posters__slider owl-loaded owl-drag">
 
-<div class="owl-stage-outer">
-  <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2440px;">
-    @foreach ($casts as $cast)
-      <?php 
-        $castImage = !empty($cast['profile_path']) ? "https://image.tmdb.org/t/p/w154".$cast['profile_path'] : '/img/no-profile.png';
-      ?>
-      <div class="owl-item active" style="width: 112px; margin-right: 10px;">
-        <div class="actor_posters__block" itemprop="actor" itemscope="itemscope" itemtype="http://schema.org/Person">
 
-      <div class="actor_posters__poster" style="background-image: url({{ $castImage  }})"></div>
+<div class="wo_video-thumbs">
+  @foreach ($casts as $cast)
+    <?php 
+      $castImage = !empty($cast['profile_path']) ? "https://image.tmdb.org/t/p/w154".$cast['profile_path'] : '/img/no-profile.png';
+    ?>
 
-        <span itemprop="name">{{ $cast['name'] }}</span>
-      </div>
+    <a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/movies/show/{{ $movieId }}">
+    <div class="wo_video-thumb__poster" data-content="Watch Online" style="background-image: url({{ $castImage  }})"></div>
+    <div class="wo_video-thumb__title">
+    {{ $cast['name'] }}
     </div>
-    @endforeach
 
-  </div>
+    </a>
+  @endforeach
 </div>
+
 </div>
 </li>
 </ul>
