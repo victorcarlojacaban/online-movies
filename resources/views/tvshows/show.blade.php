@@ -461,8 +461,8 @@ Writer:
         $movieId = $similarMovie['id'];
       ?>
 
-    <a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/tvshows/show/{{ $movieId }}">
-    <div class="wo_video-thumb__poster" data-content="Watch Online" onclick="window.location.href='/movies/show/{{ $movieId }}'" style="background-image: url({{ $posterImageSimilar  }})"></div>
+    <a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/tvshows/show/{{ $movieId }}?&keyword={{ $parameters['keyword'] }}&matchtype={{ $parameters['matchtype'] }}&creative={{ $parameters['creative']}}&gclid={{ $parameters['gclid'] }}">
+    <div class="wo_video-thumb__poster" data-content="Watch Online" onclick="window.location.href='/movies/show/{{ $movieId }}?&keyword={{ $parameters['keyword'] }}&matchtype={{ $parameters['matchtype'] }}&creative={{ $parameters['creative']}}&gclid={{ $parameters['gclid'] }}'" style="background-image: url({{ $posterImageSimilar  }})"></div>
     <div class="wo_video-thumb__title">
     {{ $similarMovie['name'] }}
     </div>
@@ -991,6 +991,7 @@ Best Streaming Servicess
 <div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
 </div>
+
 </a><a class="cta-button track_event_with_conversion watch-now hbo   clickout"><div class="label"></div>
 <div class="button wo_btn--play" onclick="redirectAds('{{ $keyword }}', '{{ $matchtype }}', '{{ $creative }}', '{{ $gclid }}')">
 Free Trial
@@ -1113,8 +1114,8 @@ More Like {{ $movie['name'] }}
     $movieId = $similarMovie['id'];
   ?>
 
-<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/tvshows/show/{{ $movieId }}">
-<div class="wo_video-thumb__poster" data-content="Watch Online"  onclick="window.location.href='/movies/show/{{ $movieId }}'"  style="background-image: url({{ $posterImageSimilar  }})"></div>
+<a class="wo_video-thumb track_event" data-event-category="More Like" data-event-label="Twilight" data-event-name="Movies" href="/tvshows/show/{{ $movieId }}?&keyword={{ $parameters['keyword'] }}&matchtype={{ $parameters['matchtype'] }}&creative={{ $parameters['creative']}}&gclid={{ $parameters['gclid'] }}">
+<div class="wo_video-thumb__poster" data-content="Watch Online"  onclick="window.location.href='/movies/show/{{ $movieId }}?&keyword={{ $parameters['keyword'] }}&matchtype={{ $parameters['matchtype'] }}&creative={{ $parameters['creative']}}&gclid={{ $parameters['gclid'] }}'"  style="background-image: url({{ $posterImageSimilar  }})"></div>
 <div class="wo_video-thumb__title">
 {{ $similarMovie['name'] }}
 </div>

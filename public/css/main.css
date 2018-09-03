@@ -7792,6 +7792,13 @@ body .wo_movie-item__link.list .wo_movie-item__title .wo_rating__title {
     font-size: 10px;
     padding: 5px;
 }
+
+.amazon_prime_disp_1 {
+    display: block!important;
+}
+.amazon_prime_disp_2 {
+    display: none;
+}
 .wo_streaming-sites-buttons__select-box label {
     margin: 0 5px 0 0;
 }

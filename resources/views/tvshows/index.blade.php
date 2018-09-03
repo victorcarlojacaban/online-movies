@@ -34,7 +34,7 @@
 				<span class="genres-separator"></span>
 				@foreach($genres['genres'] as $genre)
 					<span class="wo_genre-filter__link ">
-						<a href="?genre={{ $genre['id'] }}" data-genre="action">{{ $genre['name'] }}</a>
+						<a href="?genre={{ $genre['id'] }}&keyword={{ $parameters['keyword'] }}&matchtype={{ $parameters['matchtype'] }}&creative={{ $parameters['creative']}}&gclid={{ $parameters['gclid'] }} " data-genre="action">{{ $genre['name'] }}</a>
 					</span>
 					<span class="genres-separator"></span>
 				@endforeach
