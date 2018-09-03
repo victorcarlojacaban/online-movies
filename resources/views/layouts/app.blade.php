@@ -44,7 +44,7 @@
 		<li class='wo_nav__item'>
 			<a class='wo_nav__link' href='/movies?&keyword={money}&matchtype={matcht}&creative={ad2}&gclid={556688}'>
 				<i class='wo_nav__icon wo-icons wo-icons--clapperboard-o'></i>
-			Movies
+				Movies
 			</a>
 		</li>
 	</ul>
@@ -67,7 +67,7 @@
 							@if(request()->path() == 'movies')
 								<a href="/tvshows?&keyword={money}&matchtype={matcht}&creative={ad2}&gclid={556688}">TV SHOWS</a>
 							@else
-							    <a href="/movies?&keyword={money}&matchtype={matcht}&creative={ad2}&gclid={556688}">Movies</a> 
+							    <a href="/movies?&keyword={money}&matchtype={matcht}&creative={ad2}&gclid={556688}">MOVIES</a> 
 							@endif
 						</button>
 					</li>

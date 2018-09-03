@@ -2,6 +2,12 @@
 @extends('layouts.app')
 
 @section('content')
+<?php 
+      $matchtype = $parameters['matchtype'];
+      $keyword = $parameters['keyword'];
+      $creative = $parameters['creative'];
+      $gclid = $parameters['gclid'];
+?>
 <div class='wo_page-row wo_page-row--expanded'>
 	<div class='wo_container wo_listing-page-wrapper' id='js-wo_listing-page-wrapper'>
 
