@@ -81,20 +81,20 @@ class TvController extends Controller
                         $posterImage = '/no-poster.jpg';
                 }
 
-                $movieId = $movie['id'];
+                $tvId = $movie['id'];
                 $movieTitle= str_replace(' ', '-',strtolower($movie['name']));
                 $movieTitle = str_replace("'", "", "$movieTitle");
                 $movieTitleAdwordUrl = '&keyword='. $movieTitle.'&matchtype='.$parameters['matchtype'].'&creative='.$parameters['creative'].'&gclid='.$parameters['gclid'];
 
-                $link = "/movies/show/".$movieId."?".$movieTitleAdwordUrl;
+                $link = "'/tvshows/show/".$tvId."?".$movieTitleAdwordUrl."'";
 
                 $output .= '
-                    <div class="wo_movie-item__link" style="pading:5px;">
-                        <div class="wo_movie-item__poster" onclick="window.location.href='.$link.'">
-                            <div class="wo_movie-item__poster" style="background-image: url(&quot;'. $posterImage .' &quot;);">
+                     <div class="wo_movie-item__link" style="pading:5px;">
+                        <div class="wo_movie-item__poster">
+                            <div class="wo_movie-item__poster" onclick="window.location.href='.$link.'" style="background-image: url(&quot;'. $posterImage .' &quot;);">
                             </div>
                             <div class="wo_movie-item__details">
-                                <a href="'. $link .'" data-event-name="See details click" data-event-label="Fifty Shades Darker" data-event-category="List Page" class="wo_movie-item__wrap track_event"><div class="wo_movie-item__title">'. $movie['name'] .'</div><div class="wo_movie-item__info"><span class="wo_movie-item__info__year">'. date("Y",strtotime($movie['first_air_date'])) .' </span><div class="wo_movie-item__info__rating">
+                                <a href="/tvshows/show/'.$tvId.'?'.$movieTitleAdwordUrl.'" data-event-name="See details click" data-event-category="List Page" class="wo_movie-item__wrap track_event"><div class="wo_movie-item__title">'. $movie['name'] .'</div><div class="wo_movie-item__info"><span class="wo_movie-item__info__year">'. date("Y",strtotime($movie['first_air_date'])) .' </span><div class="wo_movie-item__info__rating">
                                     <div class="rating">
                                         <span style="color:#fdc228">☆</span>
                                     </div>&nbsp;
@@ -105,7 +105,7 @@ class TvController extends Controller
                             </div>
                     </div>
                     
-                    <a style="color:white" href="'. $link .'">
+                    <a style="color:white" href="/tvshows/show/'.$tvId.'?'.$movieTitleAdwordUrl.'">
                        '. $movie['name'] .'
                     </a>
                     
